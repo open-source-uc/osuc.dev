@@ -1,0 +1,24 @@
+---
+import { getCollection } from "astro:content";
+
+import ProjectCard from "~/components/ProjectCard.astro";
+import Layout from "~/layouts/Layout.astro";
+
+const pinnedProjects = await getCollection("projects");
+---
+
+<Layout title="Open Source eUC">
+	<a href="/" class="text-base-300">Volver</a>
+	<ul>
+		{pinnedProjects.map((project) => <ProjectCard project={project} />)}
+	</ul>
+</Layout>
+
+<style>
+	h1 {
+		@apply text-transparent bg-clip-text text-8xl font-extrabold bg-gradient-to-br from-primary-500 to-primary-700;
+	}
+	div {
+		@apply flex flex-col text-base-100 justify-center items-center h-screen;
+	}
+</style>

@@ -1,21 +1,27 @@
 ---
-import Layout from "../layouts/Layout.astro";
+import { getCollection } from "astro:content";
+
+import Layout from "~/layouts/Layout.astro";
+import ProjectCard from "~/components/ProjectCard.astro";
+
+const pinnedProjects = await getCollection("projects", ({ data }) => data.pin !== undefined);
 ---
 
 <Layout title="Open Source eUC">
 	<div>
-		<h1>osuc.dev</h1>
+		<h1 class="mb-4">osuc.dev</h1>
+		<ul>
+			{pinnedProjects.map((project) => <ProjectCard project={project} />)}
+		</ul>
+		<a href="/projects" class="mt-4 py-4 px-6 rounded-full text-primary-50 bg-primary-700">Ver todos los proyectos</a>
 	</div>
 </Layout>
 
 <style>
 	h1 {
-		@apply text-transparent bg-clip-text text-8xl font-extrabold;
-		background-image: linear-gradient(45deg, rgb(77, 87, 224), #75b2e0);
-		background-position: 0%;
-		background-size: contain;
+		@apply text-transparent bg-clip-text text-8xl font-extrabold bg-gradient-to-br from-primary-500 to-primary-700;
 	}
 	div {
-		@apply flex justify-center items-center h-screen;
+		@apply flex flex-col text-base-100 justify-center items-center h-screen;
 	}
 </style>
