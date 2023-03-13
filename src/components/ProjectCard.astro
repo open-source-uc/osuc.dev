@@ -8,7 +8,8 @@ export interface Props {
 const { project } = Astro.props as Props;
 ---
 
-<div class="max-w-xs border border-base-500 p-4">
+<div class="max-w-xs border border-base-500 p-4 bg-base-800">
 	<div class="text-base-300 font-bold text-lg mb-2">{project.data.name}</div>
 	<div class="text-base-200">{project.data.short_description}</div>
+	<a href={`/projects/${project.slug}`} class="text-primary-200">Ver más</a>
 </div>

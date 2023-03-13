@@ -4,7 +4,9 @@ import { getCollection } from "astro:content";
 import Layout from "~/layouts/Layout.astro";
 import ProjectCard from "~/components/ProjectCard.astro";
 
-const pinnedProjects = await getCollection("projects", ({ data }) => data.pin !== undefined);
+const pinnedProjects = (await getCollection("projects", ({ data }) => data.pin !== undefined)).sort(
+	(a, b) => (a.data.pin ?? -1) - (b.data.pin ?? -1)
+);
 ---
 
 <Layout title="Open Source eUC">

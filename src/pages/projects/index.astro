@@ -7,7 +7,7 @@ import Layout from "~/layouts/Layout.astro";
 const pinnedProjects = await getCollection("projects");
 ---
 
-<Layout title="Open Source eUC">
+<Layout title="Proyectos - Open Source eUC">
 	<a href="/" class="text-base-300">Volver</a>
 	<ul>
 		{pinnedProjects.map((project) => <ProjectCard project={project} />)}
