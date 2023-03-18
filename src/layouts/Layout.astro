@@ -25,11 +25,11 @@ const { title } = Astro.props;
 	</head>
 	<body>
 		<header class="h-20 border-b border-base-700">
-			<nav class="container text-base-200 flex h-full">
-				<a href="/" class="flex items-center p-2 gap-3">
-					<OSUC class="fill-base-200 h-8 -mt-1" />
+			<nav class="container flex h-full text-base-200">
+				<a href="/" class="flex items-center gap-3 p-2">
+					<OSUC class="-mt-1 h-8 fill-base-200" />
 					<span class="sr-only">Ir al inicio</span>
-					<span aria-hidden="false" class="font-display font-bold text-2xl leading-none">Open Source UC</span>
+					<span aria-hidden="false" class="font-display text-2xl font-bold leading-none">Open Source UC</span>
 				</a>
 			</nav>
 		</header>
@@ -51,7 +51,7 @@ const { title } = Astro.props;
 		}
 		html,
 		body {
-			@apply m-0 p-0 h-full;
+			@apply m-0 h-full p-0;
 		}
 		code {
 			font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono,

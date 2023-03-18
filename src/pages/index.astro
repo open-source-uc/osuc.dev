@@ -14,90 +14,92 @@ const pinnedProjects = (await getCollection("projects", ({ data }) => data.pin !
 ---
 
 <Layout title="Open Source eUC">
-	<div class="text-center flex flex-col w-full items-center py-24 sm:py-32 md:py-52 border-b border-base-700">
+	<div class="flex w-full flex-col items-center border-b border-base-700 py-24 text-center sm:py-32 md:py-52">
 		<div class="max-w-xs sm:max-w-lg md:max-w-xl">
-			<h1 class="mb-4 text-4xl sm:text-5xl md:text-7xl font-display">Open Source UC</h1>
+			<h1 class="mb-4 font-display text-4xl sm:text-5xl md:text-7xl">Open Source UC</h1>
 			<div class="text-base-300 sm:text-lg md:text-2xl">
 				Somos una comunidad de estudiantes de la UC apasionada por crear e impulsar
-				<span class="text-transparent bg-clip-text bg-gradient-to-br from-primary-200 to-primary-400 inline-block">
+				<span class="inline-block bg-gradient-to-br from-primary-200 to-primary-400 bg-clip-text text-transparent">
 					proyectos bacanes
 				</span>
 				de código abierto
 			</div>
 		</div>
 	</div>
-	<div class="py-6 border-b border-base-700 bg-base-800">
+	<div class="border-b border-base-700 bg-base-800 py-6">
 		<div class="container">
-			<h2 class="font-display font-bold text-base-100 text-3xl sm:text-4xl text-center py-8">Proyectos destacados</h2>
-			<ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 auto-rows-auto gap-8 w-fit mx-auto">
+			<h2 class="py-8 text-center font-display text-3xl font-bold text-base-100 sm:text-4xl">Proyectos destacados</h2>
+			<ul class="mx-auto grid w-fit auto-rows-auto grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
 				{pinnedProjects.map((project) => <ProjectCard project={project} />)}
 			</ul>
-			<div class="flex flex-col md:flex-row text-center gap-2 justify-center mt-8 mx-auto max-w-lg">
-				<a href="/projects" class="rounded py-3 px-6 text-primary-50 bg-base-700 hover:bg-base-600 transition-all"
+			<div class="mx-auto mt-8 flex max-w-lg flex-col justify-center gap-2 text-center md:flex-row">
+				<a href="/projects" class="rounded bg-base-700 py-3 px-6 text-primary-50 transition-all hover:bg-base-600"
 					>Ir a GitHub</a
 				>
 				<a
 					href="/projects"
-					class="rounded py-3 px-6 text-primary-50 bg-gradient-to-br from-primary-400 to-primary-600 hover:bg-pos-0 bg-pos-100 bg-size-200 transition-all"
+					class="rounded bg-gradient-to-br from-primary-400 to-primary-600 bg-size-200 bg-pos-100 py-3 px-6 text-primary-50 transition-all hover:bg-pos-0"
 					>Ver todos los proyectos</a
 				>
 			</div>
 		</div>
 	</div>
 	<div class="py-16">
-		<div class="container grid grid-cols-1 lg:grid-cols-2 grid-flow-row gap-4 max-w-xl lg:max-w-screen-lg mx-auto">
-			<div class="bg-base-800 text-base-50 rounded overflow-clip flex flex-col">
-				<Image src={MoreImg} height={512} alt="" class="w-full object-cover h-36 object-[50%_30%]" />
-				<div class="p-6 flex flex-col flex-grow">
+		<div class="container mx-auto grid max-w-xl grid-flow-row grid-cols-1 gap-4 lg:max-w-screen-lg lg:grid-cols-2">
+			<div class="flex flex-col overflow-clip rounded bg-base-800 text-base-50">
+				<Image src={MoreImg} height={512} alt="" class="h-36 w-full object-cover object-[50%_30%]" />
+				<div class="flex flex-grow flex-col p-6">
 					<div class="flex-grow">
-						<h2 class="font-display font-bold text-3xl">Conoce más</h2>
+						<h2 class="font-display text-3xl font-bold">Conoce más</h2>
 						<div>Descubre que es lo que hacemos, como lo hacemos y como puedes participar.</div>
 					</div>
 					<a
 						href="/about"
-						class="rounded h-10 p-4 justify-center items-center flex w-full lg:w-max mt-8 text-primary-50 bg-base-700 hover:bg-base-600 transition-colors"
+						class="mt-8 flex h-10 w-full items-center justify-center rounded-md bg-base-700 px-4 text-primary-50 transition-colors hover:bg-base-600 lg:w-max"
 						>Más acerca de nosotros</a
 					>
 				</div>
 			</div>
-			<div class="bg-base-800 text-base-50 rounded overflow-clip flex flex-col">
-				<Image src={ColaborateImg} height={512} alt="" class="w-full object-cover h-36 object-[50%_30%]" />
-				<div class="p-6 flex flex-col flex-grow">
-					<h2 class="font-display text-base-50 text-3xl font-bold">Colabora con nosotros</h2>
+			<div class="flex flex-col overflow-clip rounded bg-base-800 text-base-50">
+				<Image src={ColaborateImg} height={512} alt="" class="h-36 w-full object-cover object-[50%_30%]" />
+				<div class="flex flex-grow flex-col p-6">
+					<h2 class="font-display text-3xl font-bold text-base-50">Colabora con nosotros</h2>
 					<div class="text-base-100">
 						Desde sponsors hasta otras iniciativas de otras universidades, buscamos colaborar para impulsar la comunidad
 						de código abierto.
 					</div>
 					<a
 						href="/about"
-						class="rounded h-10 p-4 justify-center items-center flex w-full lg:w-max mt-8 text-primary-50 bg-base-700 hover:bg-base-600 transition-colors"
+						class="mt-8 flex h-10 w-full items-center justify-center rounded-md bg-base-700 px-4 text-primary-50 transition-colors hover:bg-base-600 lg:w-max"
 						>Contáctanos</a
 					>
 				</div>
 			</div>
-			<div class="lg:col-span-2 bg-primary-600 grid lg:grid-cols-2 h-min gap-4 rounded overflow-clip">
-				<div class="relative lg:-mr-4 max-h-64 lg:max-h-96">
-					<div class="absolute inset-0 bg-primary-600 mix-blend-overlay opacity-10"></div>
+			<div class="grid h-min gap-4 overflow-clip rounded bg-primary-600 lg:col-span-2 lg:grid-cols-2">
+				<div class="relative max-h-64 lg:-mr-4 lg:max-h-96">
+					<div class="absolute inset-0 bg-primary-600 opacity-10 mix-blend-overlay"></div>
 					<div
-						class="absolute inset-0 bg-gradient-to-b lg:bg-gradient-to-r from-transparent via-transparent to-primary-600"
+						class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-primary-600 lg:bg-gradient-to-r"
 					>
 					</div>
-					<Image src={JoinImg} height={1024} alt="" class="w-full h-full object-cover max-h-96 object-[50%_35%]" />
+					<Image src={JoinImg} height={1024} alt="" class="h-full max-h-96 w-full object-cover object-[50%_35%]" />
 				</div>
-				<div class="px-6 py-6 flex flex-col">
+				<div class="flex flex-col px-6 py-6">
 					<div class="flex-grow">
-						<h2 class="font-display text-3xl font-bold text-primary-50 mt-4 mb-4">Únete</h2>
+						<h2 class="mt-4 mb-4 font-display text-3xl font-bold text-primary-50">Únete</h2>
 						<div class="text-primary-100">
 							Participa en la creación y colaboración en proyectos de distinto ámbito y alcance.
 						</div>
 					</div>
-					<div class="flex flex-col gap-2 mt-8">
+					<div class="mt-8 flex flex-col gap-2">
 						<a
 							href="/start"
-							class="border-primary-100 border text-primary-50 px-10 h-10 flex justify-center items-center rounded"
+							class="flex h-10 items-center justify-center rounded-md border border-primary-100 px-10 text-primary-50"
 							>Grupo general</a
 						>
-						<a href="/start" class="bg-primary-100 text-primary-900 px-10 h-10 flex justify-center items-center rounded"
+						<a
+							href="/start"
+							class="flex h-10 items-center justify-center rounded-md bg-primary-100 px-10 text-primary-900"
 							>Únete a nuestra comunidad</a
 						>
 					</div>
@@ -109,6 +111,6 @@ const pinnedProjects = (await getCollection("projects", ({ data }) => data.pin !
 
 <style>
 	h1 {
-		@apply text-transparent bg-clip-text font-extrabold bg-gradient-to-br from-primary-50 to-primary-100;
+		@apply bg-gradient-to-br from-primary-50 to-primary-100 bg-clip-text font-extrabold text-transparent;
 	}
 </style>

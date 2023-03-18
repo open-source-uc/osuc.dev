@@ -11,7 +11,7 @@ const { project } = Astro.props as Props;
 const img = await getRepoImg(project.data.github);
 ---
 
-<div class="bg-base-700 md:max-w-sm flex flex-col border border-base-500 rounded overflow-clip max-w-lg">
+<li class="flex max-w-lg flex-col overflow-clip rounded border border-base-500 bg-base-700 md:max-w-sm">
 	{
 		img && (
 			<>
@@ -20,22 +20,22 @@ const img = await getRepoImg(project.data.github);
 					height={256}
 					width={512}
 					format="webp"
-					class="h-32 bg-base-500 object-cover border-b border-base-500 overflow-clip object-center"
+					class="h-32 overflow-clip border-b border-base-500 bg-base-500 object-cover object-center"
 					alt=""
 				/>
-				<div class="px-4 py-4 flex flex-col">
-					{img ? null : <div class="text-base-100 font-bold font-display text-xl mb-2">{project.data.name}</div>}
+				<div class="flex flex-col px-4 py-4">
+					{img ? null : <div class="mb-2 font-display text-xl font-bold text-base-100">{project.data.name}</div>}
 					{project.data.tags && (
-						<ul class="flex flex-wrap gap-2 mb-4">
+						<ul class="mb-4 flex flex-wrap gap-2">
 							{project.data.tags.map((tag) => (
-								<li class="text-base-400 text-sm border border-base-500 px-2 py-1 rounded">{tag}</li>
+								<li class="rounded-md border border-base-400 px-2 py-1 text-sm text-base-300">{tag}</li>
 							))}
 						</ul>
 					)}
-					<div class="text-base-200 leading-snug">{project.data.short_description}</div>
+					<div class="leading-snug text-base-200">{project.data.short_description}</div>
 					<a
 						href={`/projects/${project.slug}`}
-						class="rounded text-base-100 bg-base-500 hover:bg-base-600 py-2 px-4 w-fit mt-6 transition-colors"
+						class="mt-6 w-fit rounded-md bg-base-500 py-2 px-4 text-base-100 transition-colors hover:bg-base-600"
 					>
 						Ver más
 					</a>
@@ -43,4 +43,4 @@ const img = await getRepoImg(project.data.github);
 			</>
 		)
 	}
-</div>
+</li>
