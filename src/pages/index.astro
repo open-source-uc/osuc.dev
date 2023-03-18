@@ -36,8 +36,9 @@ const pinnedProjects = (await getCollection("projects", ({ data }) => data.pin !
 				{pinnedProjects.map((project) => <ProjectCard project={project} />)}
 			</ul>
 			<div class="mx-auto mt-8 lg:mt-16 flex max-w-lg flex-col justify-center gap-2 text-center md:flex-row">
-				<a href="/projects" class="rounded bg-base-700 py-3 px-6 text-primary-50 transition-all hover:bg-base-600"
-					>Ir a GitHub</a
+				<a
+					href="https://github.com/open-source-uc"
+					class="rounded bg-base-700 py-3 px-6 text-primary-50 transition-all hover:bg-base-600">Ir a GitHub</a
 				>
 				<a
 					href="/projects"
@@ -78,7 +79,7 @@ const pinnedProjects = (await getCollection("projects", ({ data }) => data.pin !
 						de código abierto.
 					</div>
 					<a
-						href="/about"
+						href="/contact"
 						class="mt-8 flex h-10 w-full items-center justify-center rounded-md bg-base-700 px-4 text-primary-50 transition-colors hover:bg-base-600 lg:w-max"
 						>Contáctanos</a
 					>
@@ -103,12 +104,12 @@ const pinnedProjects = (await getCollection("projects", ({ data }) => data.pin !
 					<div class="mt-8 flex flex-col gap-2">
 						<a
 							href="https://t.me/+zQdotSmFEIRkMzcx"
-							class="flex h-10 items-center justify-center rounded-md border border-primary-100 text-primary-50"
+							class="flex h-10 items-center justify-center rounded-md border border-primary-200 text-primary-100 hover:bg-primary-500 transition-colors hover:text-primary-50"
 							>Grupo general</a
 						>
 						<a
-							href="/start"
-							class="flex h-10 min-h-fit items-center justify-center rounded-md bg-primary-100 text-primary-900"
+							href="/join"
+							class="flex h-10 min-h-fit items-center justify-center rounded-md bg-primary-100 text-primary-900 hover:bg-primary-50 hover:text-primary-800 hover:outline-2 hover:outline-primary-800 transition-all"
 							>Únete a nuestra comunidad</a
 						>
 					</div>
@@ -122,9 +123,7 @@ const pinnedProjects = (await getCollection("projects", ({ data }) => data.pin !
 	h1 {
 		@apply bg-gradient-to-br from-primary-50 to-primary-100 bg-clip-text font-extrabold text-transparent;
 	}
-</style>
 
-<style>
 	#landing {
 		@apply relative;
 	}

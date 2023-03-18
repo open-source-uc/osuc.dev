@@ -4,6 +4,8 @@ import "@fontsource/inter/variable.css";
 
 import "@fontsource/league-spartan/700.css";
 import "@fontsource/league-spartan/variable.css";
+import GitHubIcon from "~/components/icons/GitHubIcon.astro";
+import InstagramIcon from "~/components/icons/InstagramIcon.astro";
 
 import OSUC from "~/components/OSUC.astro";
 
@@ -23,17 +25,33 @@ const { title } = Astro.props;
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
-	<body>
-		<header class="h-20 border-b border-base-700">
-			<nav class="container flex h-full text-base-200">
-				<a href="/" class="flex items-center gap-3 p-2">
-					<OSUC class="-mt-1 h-8 fill-base-200" />
-					<span class="sr-only">Ir al inicio</span>
-					<span aria-hidden="false" class="font-display text-2xl font-bold leading-none">Open Source UC</span>
-				</a>
-			</nav>
+	<body class="min-h-screen flex flex-col">
+		<header class="border-b flex-shrink-0 border-base-700">
+			<div class="container h-20 items-center flex">
+				<div class="flex-grow">
+					<nav class="flex h-full text-base-200">
+						<a href="/" class="flex items-center gap-3 p-2">
+							<OSUC class="-mt-1 h-8 fill-base-200" />
+							<span class="sr-only">Ir al inicio</span>
+							<span aria-hidden="false" class="font-display text-2xl font-bold leading-none">Open Source UC</span>
+						</a>
+					</nav>
+				</div>
+				<div class="flex gap-2">
+					<a href="https://github.com/open-source-uc">
+						<GitHubIcon class="text-base-200" />
+						<span class="sr-only">Ir a GitHub</span>
+					</a>
+					<a href="https://www.instagram.com/opensource_euc">
+						<InstagramIcon class="text-base-200" />
+						<span class="sr-only">Ir a Instagram</span>
+					</a>
+				</div>
+			</div>
 		</header>
-		<slot />
+		<div class="flex-grow">
+			<slot />
+		</div>
 		<div class="border-t border-base-700">
 			<footer class="container text-base-50">
 				<nav
