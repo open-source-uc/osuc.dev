@@ -1,4 +1,12 @@
 ---
+import "@fontsource/inter/500.css";
+import "@fontsource/inter/variable.css";
+
+import "@fontsource/league-spartan/700.css";
+import "@fontsource/league-spartan/variable.css";
+
+import OSUC from "~/components/OSUC.astro";
+
 export interface Props {
 	title: string;
 }
@@ -16,20 +24,38 @@ const { title } = Astro.props;
 		<title>{title}</title>
 	</head>
 	<body>
+		<header class="h-20 border-b border-base-700">
+			<nav class="container text-base-200 flex h-full">
+				<a href="/" class="flex items-center p-2 gap-3">
+					<OSUC class="fill-base-200 h-8 -mt-1" />
+					<span class="sr-only">Ir al inicio</span>
+					<span aria-hidden="false" class="font-display font-bold text-2xl leading-none">Open Source UC</span>
+				</a>
+			</nav>
+		</header>
 		<slot />
+		<div class="border-t border-base-700">
+			<footer class="container text-base-50">
+				<nav
+					aria-label="Secondary"
+					class="flex flex-col items-start justify-between gap-12 py-8 sm:flex-row-reverse md:py-12"
+				>
+				</nav>
+			</footer>
+		</div>
 	</body>
+
+	<style is:global>
+		html {
+			@apply bg-base-900;
+		}
+		html,
+		body {
+			@apply m-0 p-0 h-full;
+		}
+		code {
+			font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono,
+				Courier New, monospace;
+		}
+	</style>
 </html>
-<style is:global>
-	html {
-		@apply bg-base-900;
-		font-family: system-ui, sans-serif;
-	}
-	html,
-	body {
-		@apply m-0 p-0 h-full;
-	}
-	code {
-		font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New,
-			monospace;
-	}
-</style>

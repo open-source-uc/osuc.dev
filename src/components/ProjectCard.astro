@@ -1,15 +1,46 @@
 ---
+import { Image } from "astro:assets";
 import type { CollectionEntry } from "astro:content";
+import { getRepoImg } from "~/lib/repos";
 
 export interface Props {
 	project: CollectionEntry<"projects">;
 }
 
 const { project } = Astro.props as Props;
+const img = await getRepoImg(project.data.github);
 ---
 
-<div class="max-w-xs border border-base-500 p-4 bg-base-800">
-	<div class="text-base-300 font-bold text-lg mb-2">{project.data.name}</div>
-	<div class="text-base-200">{project.data.short_description}</div>
-	<a href={`/projects/${project.slug}`} class="text-primary-200">Ver más</a>
+<div class="bg-base-700 md:max-w-sm flex flex-col border border-base-500 rounded overflow-clip max-w-lg">
+	{
+		img && (
+			<>
+				<Image
+					src={img}
+					height={256}
+					width={512}
+					format="webp"
+					class="h-32 bg-base-500 object-cover border-b border-base-500 overflow-clip object-center"
+					alt=""
+				/>
+				<div class="px-4 py-4 flex flex-col">
+					{img ? null : <div class="text-base-100 font-bold font-display text-xl mb-2">{project.data.name}</div>}
+					{project.data.tags && (
+						<ul class="flex flex-wrap gap-2 mb-4">
+							{project.data.tags.map((tag) => (
+								<li class="text-base-400 text-sm border border-base-500 px-2 py-1 rounded">{tag}</li>
+							))}
+						</ul>
+					)}
+					<div class="text-base-200 leading-snug">{project.data.short_description}</div>
+					<a
+						href={`/projects/${project.slug}`}
+						class="rounded text-base-100 bg-base-500 hover:bg-base-600 py-2 px-4 w-fit mt-6 transition-colors"
+					>
+						Ver más
+					</a>
+				</div>
+			</>
+		)
+	}
 </div>

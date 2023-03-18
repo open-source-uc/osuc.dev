@@ -1,8 +1,35 @@
+const defaultTheme = require("tailwindcss/defaultTheme");
+const plugin = require("tailwindcss/plugin");
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
 	content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
+	corePlugins: {
+		container: false,
+	},
+	plugins: [
+		plugin(({ addComponents }) => {
+			addComponents({
+				".container": {
+					"@apply mx-auto max-w-screen-2xl px-4 md:px-8": {},
+				},
+			});
+		}),
+	],
 	theme: {
-		extend: {},
+		extend: {
+			fontFamily: {
+				sans: ["InterVariable", "Inter", ...defaultTheme.fontFamily.sans],
+				display: ["League SpartanVariable", "League Spartan", ...defaultTheme.fontFamily.sans],
+			},
+			backgroundSize: {
+				"size-200": "200% 200%",
+			},
+			backgroundPosition: {
+				"pos-0": "0% 0%",
+				"pos-100": "100% 100%",
+			},
+		},
 		colors: {
 			transparent: "transparent",
 			primary: {
@@ -31,5 +58,4 @@ module.exports = {
 			},
 		},
 	},
-	plugins: [],
 };
