@@ -14,25 +14,28 @@ const pinnedProjects = (await getCollection("projects", ({ data }) => data.pin !
 ---
 
 <Layout title="Open Source eUC">
-	<div class="flex w-full flex-col items-center border-b border-base-700 py-24 text-center sm:py-32 md:py-52">
+	<div
+		id="landing"
+		class="flex w-full flex-col items-center border-b border-base-700 py-24 text-center sm:py-32 md:py-52"
+	>
 		<div class="max-w-xs sm:max-w-lg md:max-w-xl">
-			<h1 class="mb-4 font-display text-4xl sm:text-5xl md:text-7xl">Open Source UC</h1>
-			<div class="text-base-300 sm:text-lg md:text-2xl">
+			<h1 class="mb-4 font-display text-4xl sm:text-5xl md:text-7xl text-base-50">Open Source UC</h1>
+			<div class="text-base-200 sm:text-lg md:text-2xl">
 				Somos una comunidad de estudiantes de la UC apasionada por crear e impulsar
-				<span class="inline-block bg-gradient-to-br from-primary-200 to-primary-400 bg-clip-text text-transparent">
+				<span class="inline-block bg-gradient-to-br from-primary-200 to-primary-300 bg-clip-text text-transparent">
 					proyectos bacanes
 				</span>
 				de código abierto
 			</div>
 		</div>
 	</div>
-	<div class="border-b border-base-700 bg-base-800 py-6">
+	<div id="projects" class="pt-6 pb-16">
 		<div class="container">
 			<h2 class="py-8 text-center font-display text-3xl font-bold text-base-100 sm:text-4xl">Proyectos destacados</h2>
 			<ul class="mx-auto grid w-fit auto-rows-auto grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
 				{pinnedProjects.map((project) => <ProjectCard project={project} />)}
 			</ul>
-			<div class="mx-auto mt-8 flex max-w-lg flex-col justify-center gap-2 text-center md:flex-row">
+			<div class="mx-auto mt-8 lg:mt-16 flex max-w-lg flex-col justify-center gap-2 text-center md:flex-row">
 				<a href="/projects" class="rounded bg-base-700 py-3 px-6 text-primary-50 transition-all hover:bg-base-600"
 					>Ir a GitHub</a
 				>
@@ -61,7 +64,13 @@ const pinnedProjects = (await getCollection("projects", ({ data }) => data.pin !
 				</div>
 			</div>
 			<div class="flex flex-col overflow-clip rounded bg-base-800 text-base-50">
-				<Image src={ColaborateImg} height={512} alt="" class="h-36 w-full object-cover object-[50%_30%]" />
+				<Image
+					src={ColaborateImg}
+					height={512}
+					alt=""
+					class="h-36 w-full object-cover object-[50%_30%] brightness-125"
+					draggable="false"
+				/>
 				<div class="flex flex-grow flex-col p-6">
 					<h2 class="font-display text-3xl font-bold text-base-50">Colabora con nosotros</h2>
 					<div class="text-base-100">
@@ -77,7 +86,7 @@ const pinnedProjects = (await getCollection("projects", ({ data }) => data.pin !
 			</div>
 			<div class="grid h-min gap-4 overflow-clip rounded bg-primary-600 lg:col-span-2 lg:grid-cols-2">
 				<div class="relative max-h-64 lg:-mr-4 lg:max-h-96">
-					<div class="absolute inset-0 bg-primary-600 opacity-10 mix-blend-overlay"></div>
+					<div class="absolute inset-0 bg-primary-600 opacity-20 mix-blend-overlay"></div>
 					<div
 						class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-primary-600 lg:bg-gradient-to-r"
 					>
@@ -86,20 +95,20 @@ const pinnedProjects = (await getCollection("projects", ({ data }) => data.pin !
 				</div>
 				<div class="flex flex-col px-6 py-6">
 					<div class="flex-grow">
-						<h2 class="mt-4 mb-4 font-display text-3xl font-bold text-primary-50">Únete</h2>
+						<h2 class="mt-4 mb-4 font-display text-4xl font-bold text-primary-50">Únete</h2>
 						<div class="text-primary-100">
 							Participa en la creación y colaboración en proyectos de distinto ámbito y alcance.
 						</div>
 					</div>
 					<div class="mt-8 flex flex-col gap-2">
 						<a
-							href="/start"
-							class="flex h-10 items-center justify-center rounded-md border border-primary-100 px-10 text-primary-50"
+							href="https://t.me/+zQdotSmFEIRkMzcx"
+							class="flex h-10 items-center justify-center rounded-md border border-primary-100 text-primary-50"
 							>Grupo general</a
 						>
 						<a
 							href="/start"
-							class="flex h-10 items-center justify-center rounded-md bg-primary-100 px-10 text-primary-900"
+							class="flex h-10 min-h-fit items-center justify-center rounded-md bg-primary-100 text-primary-900"
 							>Únete a nuestra comunidad</a
 						>
 					</div>
@@ -112,5 +121,18 @@ const pinnedProjects = (await getCollection("projects", ({ data }) => data.pin !
 <style>
 	h1 {
 		@apply bg-gradient-to-br from-primary-50 to-primary-100 bg-clip-text font-extrabold text-transparent;
+	}
+</style>
+
+<style>
+	#landing {
+		@apply relative;
+	}
+	#landing::before {
+		@apply inset-0 absolute -z-50 opacity-50;
+		content: "";
+		background: url("/landing/bg.svg") repeat, radial-gradient(#04397a97 0%, transparent 100%);
+		background-blend-mode: overlay;
+		mask-image: radial-gradient(#000 50%, #00000000 90%);
 	}
 </style>

@@ -11,36 +11,49 @@ const { project } = Astro.props as Props;
 const img = await getRepoImg(project.data.github);
 ---
 
-<li class="flex max-w-lg flex-col overflow-clip rounded border border-base-500 bg-base-700 md:max-w-sm">
+<li class="flex max-w-lg flex-col overflow-clip rounded border border-base-500 bg-base-800 md:max-w-sm">
 	{
-		img && (
-			<>
-				<Image
-					src={img}
-					height={256}
-					width={512}
-					format="webp"
-					class="h-32 overflow-clip border-b border-base-500 bg-base-500 object-cover object-center"
-					alt=""
-				/>
-				<div class="flex flex-col px-4 py-4">
-					{img ? null : <div class="mb-2 font-display text-xl font-bold text-base-100">{project.data.name}</div>}
-					{project.data.tags && (
-						<ul class="mb-4 flex flex-wrap gap-2">
-							{project.data.tags.map((tag) => (
-								<li class="rounded-md border border-base-400 px-2 py-1 text-sm text-base-300">{tag}</li>
-							))}
-						</ul>
-					)}
-					<div class="leading-snug text-base-200">{project.data.short_description}</div>
-					<a
-						href={`/projects/${project.slug}`}
-						class="mt-6 w-fit rounded-md bg-base-500 py-2 px-4 text-base-100 transition-colors hover:bg-base-600"
-					>
-						Ver más
-					</a>
-				</div>
-			</>
+		img ? (
+			<Image
+				src={img}
+				height={256}
+				width={512}
+				format="webp"
+				class="h-32 overflow-clip border-b border-base-700 bg-base-700 object-cover object-center"
+				alt=""
+			/>
+		) : (
+			<div class="h-32 bg-primary-50 flex items-center pt-4 justify-center border-base-700font-display text-2xl font-bold text-primary-900">
+				{project.data.name}
+			</div>
 		)
 	}
+	<div class="flex flex-grow flex-col px-4 py-4">
+		<div class="flex flex-col flex-grow">
+			{
+				project.data.tags && (
+					<ul class="mb-4 flex flex-wrap gap-2">
+						{project.data.tags.map((tag) => (
+							<li class="rounded-md border border-base-500 px-2 py-1 text-sm text-base-400">{tag}</li>
+						))}
+					</ul>
+				)
+			}
+			<div class="leading-snug text-base-200">{project.data.short_description}</div>
+		</div>
+		<div class="flex gap-2">
+			<a
+				href={`https://github.com/${project.data.github.user}/${project.data.github.repo}`}
+				class="mt-6 w-fit rounded-md bg-base-700 py-2 px-4 text-base-200 transition-colors hover:bg-base-600"
+			>
+				Repositorio
+			</a>
+			<a
+				href={`/projects/${project.slug}`}
+				class="mt-6 w-fit rounded-md bg-base-700 py-2 px-4 text-base-200 transition-colors hover:bg-base-600"
+			>
+				Ver más
+			</a>
+		</div>
+	</div>
 </li>
