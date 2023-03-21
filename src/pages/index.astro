@@ -1,8 +1,12 @@
 ---
 import { getCollection } from "astro:content";
+import { Image } from "astro:assets";
 
 import Layout from "~/layouts/Layout.astro";
 import ProjectCard from "~/components/ProjectCard.astro";
+import JoinImg from "~/assets/landing/join.jpg";
+import ColaborateImg from "~/assets/landing/colaborate.jpg";
+import MoreImg from "~/assets/landing/more.jpg";
 
 const pinnedProjects = (await getCollection("projects", ({ data }) => data.pin !== undefined)).sort(
 	(a, b) => (a.data.pin ?? -1) - (b.data.pin ?? -1)
@@ -10,20 +14,124 @@ const pinnedProjects = (await getCollection("projects", ({ data }) => data.pin !
 ---
 
 <Layout title="Open Source eUC">
-	<div>
-		<h1 class="mb-4">osuc.dev</h1>
-		<ul>
-			{pinnedProjects.map((project) => <ProjectCard project={project} />)}
-		</ul>
-		<a href="/projects" class="mt-4 py-4 px-6 rounded-full text-primary-50 bg-primary-700">Ver todos los proyectos</a>
+	<div
+		id="landing"
+		class="flex w-full flex-col items-center border-b border-base-700 py-24 text-center sm:py-32 md:py-52"
+	>
+		<div class="max-w-xs sm:max-w-lg md:max-w-xl">
+			<h1 class="mb-4 font-display text-4xl sm:text-5xl md:text-7xl text-base-50">Open Source UC</h1>
+			<div class="text-base-200 sm:text-lg md:text-2xl">
+				Somos una comunidad de estudiantes de la UC apasionada por crear e impulsar
+				<span class="inline-block bg-gradient-to-br from-primary-200 to-primary-300 bg-clip-text text-transparent">
+					proyectos bacanes
+				</span>
+				de código abierto
+			</div>
+		</div>
+	</div>
+	<div id="projects" class="pt-6 pb-16">
+		<div class="container">
+			<h2 class="py-8 text-center font-display text-3xl font-bold text-base-100 sm:text-4xl">Proyectos destacados</h2>
+			<ul class="mx-auto grid w-fit auto-rows-auto grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+				{pinnedProjects.map((project) => <ProjectCard project={project} />)}
+			</ul>
+			<div class="mx-auto mt-8 lg:mt-16 flex max-w-lg flex-col justify-center gap-2 text-center md:flex-row">
+				<a
+					href="https://github.com/open-source-uc"
+					class="rounded bg-base-700 py-3 px-6 text-primary-50 transition-all hover:bg-base-600">Ir a GitHub</a
+				>
+				<a
+					href="/projects"
+					class="rounded bg-gradient-to-br from-primary-400 to-primary-600 bg-size-200 bg-pos-100 py-3 px-6 text-primary-50 transition-all hover:bg-pos-0"
+					>Ver todos los proyectos</a
+				>
+			</div>
+		</div>
+	</div>
+	<div class="py-16">
+		<div class="container mx-auto grid max-w-xl grid-flow-row grid-cols-1 gap-4 lg:max-w-screen-lg lg:grid-cols-2">
+			<div class="flex flex-col overflow-clip rounded bg-base-800 text-base-50">
+				<Image src={MoreImg} height={512} alt="" class="h-36 w-full object-cover object-[50%_30%]" />
+				<div class="flex flex-grow flex-col p-6">
+					<div class="flex-grow">
+						<h2 class="font-display text-3xl font-bold">Conoce más</h2>
+						<div>Descubre que es lo que hacemos, como lo hacemos y como puedes participar.</div>
+					</div>
+					<a
+						href="/about"
+						class="mt-8 flex h-10 w-full items-center justify-center rounded-md bg-base-700 px-4 text-primary-50 transition-colors hover:bg-base-600 lg:w-max"
+						>Más acerca de nosotros</a
+					>
+				</div>
+			</div>
+			<div class="flex flex-col overflow-clip rounded bg-base-800 text-base-50">
+				<Image
+					src={ColaborateImg}
+					height={512}
+					alt=""
+					class="h-36 w-full object-cover object-[50%_30%] brightness-125"
+					draggable="false"
+				/>
+				<div class="flex flex-grow flex-col p-6">
+					<h2 class="font-display text-3xl font-bold text-base-50">Colabora con nosotros</h2>
+					<div class="text-base-100">
+						Desde empresas hasta otras iniciativas de otras universidades, buscamos colaborar para impulsar la comunidad
+						de código abierto.
+					</div>
+					<a
+						href="/contact"
+						class="mt-8 flex h-10 w-full items-center justify-center rounded-md bg-base-700 px-4 text-primary-50 transition-colors hover:bg-base-600 lg:w-max"
+						>Contáctanos</a
+					>
+				</div>
+			</div>
+			<div class="grid h-min gap-4 overflow-clip rounded bg-primary-600 lg:col-span-2 lg:grid-cols-2">
+				<div class="relative max-h-64 lg:-mr-4 lg:max-h-96">
+					<div class="absolute inset-0 bg-primary-600 opacity-20 mix-blend-overlay"></div>
+					<div
+						class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-primary-600 lg:bg-gradient-to-r"
+					>
+					</div>
+					<Image src={JoinImg} height={1024} alt="" class="h-full max-h-96 w-full object-cover object-[50%_35%]" />
+				</div>
+				<div class="flex flex-col px-6 py-6">
+					<div class="flex-grow">
+						<h2 class="mt-4 mb-4 font-display text-4xl font-bold text-primary-50">Únete</h2>
+						<div class="text-primary-100">
+							Participa en la creación y colaboración en proyectos de distinto ámbito y alcance.
+						</div>
+					</div>
+					<div class="mt-8 flex flex-col gap-2">
+						<a
+							href="https://t.me/+zQdotSmFEIRkMzcx"
+							class="flex h-10 items-center justify-center rounded-md border border-primary-200 text-primary-100 hover:bg-primary-500 transition-colors hover:text-primary-50"
+							>Grupo general</a
+						>
+						<a
+							href="/join"
+							class="flex h-10 min-h-fit items-center justify-center rounded-md bg-primary-100 text-primary-900 hover:bg-primary-50 hover:text-primary-800 hover:outline-2 hover:outline-primary-800 transition-all"
+							>Únete a nuestra comunidad</a
+						>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 </Layout>
 
 <style>
 	h1 {
-		@apply text-transparent bg-clip-text text-8xl font-extrabold bg-gradient-to-br from-primary-500 to-primary-700;
+		@apply bg-gradient-to-br from-primary-50 to-primary-100 bg-clip-text font-extrabold text-transparent;
 	}
-	div {
-		@apply flex flex-col text-base-100 justify-center items-center h-screen;
+
+	#landing {
+		@apply relative;
+	}
+	#landing::before {
+		@apply inset-0 absolute -z-50 opacity-50;
+		content: "";
+		background: url("/landing/bg.svg") repeat, radial-gradient(#04397a97 0%, transparent 100%);
+		background-blend-mode: overlay;
+		mask-image: radial-gradient(#000 50%, #00000000 90%);
 	}
 </style>

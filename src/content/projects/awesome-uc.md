@@ -1,9 +1,9 @@
 ---
 pin: 1
-name: UCalendar
+name: Awesome UC
 github:
   user: open-source-uc
-  repo: UCalendar
+  repo: awesome-uc
 short_description: >
   Aplicación web que permite descargar el horario
   de BuscaCursosUC para calendarios digitales
