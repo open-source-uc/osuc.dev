@@ -5,8 +5,8 @@ github:
   user: open-source-uc
   repo: UCalendar
 short_description: >
-  Aplicación web que permite descargar el horario
-  de BuscaCursosUC para calendarios digitales
+  Aplicación web que para descargar el horario
+  de BuscaCursosUC a calendario digital
 tags: ["Ruby on Rails", "Active Admin"]
 ---
 

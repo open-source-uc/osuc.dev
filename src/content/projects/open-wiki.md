@@ -5,6 +5,6 @@ github:
   user: open-source-uc
   repo: open-wiki
 short_description: >
-  Wiki y guias de cursos de la universidad.
+  Wiki y guías de cursos de la universidad
 tags: ["Markdown", "MKDocs"]
 ---
