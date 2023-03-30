@@ -11,16 +11,16 @@ const { project } = Astro.props as Props;
 const img = await getRepoImg(project.data.github);
 ---
 
-<li class="flex max-w-lg flex-col overflow-clip rounded border border-base-500 bg-base-800 md:max-w-sm">
+<li class="flex max-w-xs flex-col overflow-clip rounded border border-base-500 bg-base-800">
 	{
 		img ? (
 			<Image
 				src={img}
-				height={256}
-				width={512}
+				width={640}
+				height={320}
 				format="webp"
 				class="h-32 overflow-clip border-b border-base-700 bg-base-700 object-cover object-center"
-				alt=""
+				alt={project.data.name}
 			/>
 		) : (
 			<div class="h-32 bg-primary-50 flex items-center pt-4 justify-center border-base-700font-display text-2xl font-bold text-primary-900">
@@ -28,7 +28,7 @@ const img = await getRepoImg(project.data.github);
 			</div>
 		)
 	}
-	<div class="flex flex-grow flex-col px-4 py-4">
+	<div class="flex flex-grow flex-col px-4 pt-2 pb-4">
 		<div class="flex flex-col flex-grow">
 			{
 				project.data.tags && (
