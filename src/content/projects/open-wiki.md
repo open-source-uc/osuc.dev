@@ -1,11 +1,10 @@
 ---
-pin: 1
+pin: 5
 name: Open Wiki
 github:
   user: open-source-uc
   repo: open-wiki
 short_description: >
-  Aplicación web que permite descargar el horario
-  de BuscaCursosUC para calendarios digitales
+  Wiki y guias de cursos de la universidad.
 tags: ["Markdown", "MKDocs"]
 ---
