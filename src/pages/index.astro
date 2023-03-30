@@ -32,10 +32,12 @@ const pinnedProjects = (await getCollection("projects", ({ data }) => data.pin !
 	<div id="projects" class="pt-6 pb-16">
 		<div class="container">
 			<h2 class="py-8 text-center font-display text-3xl font-bold text-base-100 sm:text-4xl">Proyectos destacados</h2>
-			<ul class="mx-auto grid w-fit auto-rows-auto grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+			<ul class="mx-auto grid w-fit auto-rows-auto grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
 				{pinnedProjects.map((project) => <ProjectCard project={project} />)}
 			</ul>
-			<div class="mx-auto mt-8 lg:mt-16 flex max-w-lg flex-col justify-center gap-2 text-center md:flex-row">
+			<div
+				class="mx-auto mt-4 sm:mt-8 flex max-w-xs sm:max-w-none flex-col justify-center gap-2 text-center sm:flex-row"
+			>
 				<a
 					href="https://github.com/open-source-uc"
 					class="rounded bg-base-700 py-3 px-6 text-primary-50 transition-all hover:bg-base-600">Ir a GitHub</a

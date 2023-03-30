@@ -10,7 +10,11 @@ export async function getRepoImg(variables: { user: string; repo: string }) {
 	if (cached) return cached;
 
 	const response = await fetch(graphqlUrl, { method: "POST", body, headers });
-	if (!response.ok) throw new Error(await response.text());
+
+	if (!response.ok) {
+		console.error("Missing or invalid GitHub token. Please set GITHUB_TOKEN in your environment.");
+		return undefined;
+	}
 
 	const json = await response.json();
 	const imgUrl = json.data.repository.openGraphImageUrl as string;
