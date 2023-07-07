@@ -1,41 +1,41 @@
 {
-  organization(login: "open-source-uc") {
-    pinnedItems(first: 12) {
-      edges {
-        node {
-          ... on Repository {
-          url
-            name
-            description
-            openGraphImageUrl
-            usesCustomOpenGraphImage
-            repositoryTopics(first: 8) {
-              nodes {
-                url
-                topic {
-                  name
-                  stargazerCount
-                }
-              }
-            }
-            primaryLanguage {
-              name
-            }
-            issues(states: OPEN) {
-              totalCount 
-            }
+	organization(login: "open-source-uc") {
+		pinnedItems(first: 12) {
+			edges {
+				node {
+					... on Repository {
+						url
+						name
+						description
+						openGraphImageUrl
+						usesCustomOpenGraphImage
+						repositoryTopics(first: 8) {
+							nodes {
+								url
+								topic {
+									name
+									stargazerCount
+								}
+							}
+						}
+						primaryLanguage {
+							name
+						}
+						issues(states: OPEN) {
+							totalCount
+						}
 						goodFirstIssues: issues(labels: "good first issue", states: OPEN) {
-              totalCount
-            }
-            needsHelpIssues: issues(labels: "help wanted", states: OPEN) {
-              totalCount
-            }
-            pullRequests {
-              totalCount
-            }
-          }
-        }
-      }
-    }
-  }
+							totalCount
+						}
+						needsHelpIssues: issues(labels: "help wanted", states: OPEN) {
+							totalCount
+						}
+						pullRequests {
+							totalCount
+						}
+					}
+				}
+			}
+		}
+	}
 }

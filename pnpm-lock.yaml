@@ -31,6 +31,9 @@ devDependencies:
   '@sveltejs/adapter-auto':
     specifier: ^2.0.0
     version: 2.1.0(@sveltejs/kit@1.22.0)
+  '@sveltejs/adapter-cloudflare':
+    specifier: ^2.3.0
+    version: 2.3.0(@sveltejs/kit@1.22.0)
   '@sveltejs/kit':
     specifier: ^1.20.4
     version: 1.22.0(svelte@4.0.4)(vite@4.3.9)
@@ -96,6 +99,10 @@ packages:
     dependencies:
       '@jridgewell/gen-mapping': 0.3.3
       '@jridgewell/trace-mapping': 0.3.18
+    dev: true
+
+  /@cloudflare/workers-types@4.20230628.0:
+    resolution: {integrity: sha512-dpOFJJPEEWahLJKhj+xRY+VwXu/s/634CVsLVnTNDCfs2KXZx9nwQ/04M0OKBJFdc6jheWwAAv/AGvRvrTDkDg==}
     dev: true
 
   /@deno/shim-deno-test@0.4.0:
@@ -652,6 +659,17 @@ packages:
     dependencies:
       '@sveltejs/kit': 1.22.0(svelte@4.0.4)(vite@4.3.9)
       import-meta-resolve: 3.0.0
+    dev: true
+
+  /@sveltejs/adapter-cloudflare@2.3.0(@sveltejs/kit@1.22.0):
+    resolution: {integrity: sha512-4rUtQG1rfenLh3V+w8DSfmtv/l3pGBdxjvJ68oAVX7Lpm2yHUaKPmPVOA7EuQiP0BOB/TSZVmIF8c5SnTlrYXQ==}
+    peerDependencies:
+      '@sveltejs/kit': ^1.0.0
+    dependencies:
+      '@cloudflare/workers-types': 4.20230628.0
+      '@sveltejs/kit': 1.22.0(svelte@4.0.4)(vite@4.3.9)
+      esbuild: 0.17.19
+      worktop: 0.8.0-next.15
     dev: true
 
   /@sveltejs/kit@1.22.0(svelte@4.0.4)(vite@4.3.9):
@@ -1863,6 +1881,11 @@ packages:
       picomatch: 2.3.1
     dev: true
 
+  /regexparam@2.0.1:
+    resolution: {integrity: sha512-zRgSaYemnNYxUv+/5SeoHI0eJIgTL/A2pUtXUPLHQxUldagouJ9p+K6IbIZ/JiQuCEv2E2B1O11SjVQy3aMCkw==}
+    engines: {node: '>=8'}
+    dev: true
+
   /resolve-from@4.0.0:
     resolution: {integrity: sha512-pb/MYmXstAkysRFx8piNI1tGFNQIFA3vkE3Gq4EuA1dF6gHp/+vgZqsCGJapvy8N3Q+4o7FwvquPJcnZ7RYy4g==}
     engines: {node: '>=4'}
@@ -2376,6 +2399,14 @@ packages:
     dependencies:
       isexe: 2.0.0
     dev: false
+
+  /worktop@0.8.0-next.15:
+    resolution: {integrity: sha512-0ycNO52P6nVwsjr1y20zuf0nqJatAb8L7MODBfQIxbxndHV5O4s50oZZMHWhJG1RLpHwbK0Epq8aaQK4E2GlgQ==}
+    engines: {node: '>=12'}
+    dependencies:
+      mrmime: 1.0.1
+      regexparam: 2.0.1
+    dev: true
 
   /wrappy@1.0.2:
     resolution: {integrity: sha512-l4Sp/DRseor9wL6EvV2+TuQn63dMkPjZ/sp9XkghTEbV9KlPS1xUsZ3u7/IQO4wxtcFB4bgpQPRcR3QCvezPcQ==}

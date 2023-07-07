@@ -5,13 +5,14 @@
 @tailwind components;
 @tailwind utilities;
 
-html, body {
+html,
+body {
 	height: 100%;
 	width: 100%;
 }
 
 body {
-	background-color: theme("colors.base.950");
+	background-color: theme('colors.base.950');
 	display: flex;
 	flex-direction: column;
 }

@@ -1,4 +1,4 @@
-import adapter from '@sveltejs/adapter-auto';
+import adapter from '@sveltejs/adapter-cloudflare';
 import { vitePreprocess } from '@sveltejs/kit/vite';
 
 /** @type {import('@sveltejs/kit').Config} */
@@ -16,10 +16,9 @@ const config = {
 		adapter: adapter(),
 		alias: {
 			$lib: './src/lib',
-			$assets: './src/assets',
+			$assets: './src/assets'
 		}
-	},
-	
+	}
 };
 
 export default config;
