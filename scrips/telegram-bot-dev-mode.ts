@@ -1,6 +1,14 @@
-import { bot, type BotContext, type BotConversation } from "../src/lib/server/telegram/bot";
-import { Keyboard } from "grammy";
-import {  createConversation } from "@grammyjs/conversations";
+import { Context as BaseContext, Keyboard, session } from "grammy";
+import { conversations, createConversation, type Conversation, type ConversationFlavor } from "@grammyjs/conversations";
+
+import { createBaseBot } from "../src/lib/server/telegram/build";
+
+export type BotContext = BaseContext & ConversationFlavor;
+export type BotConversation = Conversation<BotContext>;
+
+const bot = createBaseBot<BotContext>()
+bot.use(session({ initial: () => ({}) }));
+bot.use(conversations());
 
 async function getChannelId(conversation: BotConversation, ctx: BotContext) {
   const keyboard = new Keyboard().requestChat("Canal", 1, { chat_is_channel: true, bot_is_member: true })
