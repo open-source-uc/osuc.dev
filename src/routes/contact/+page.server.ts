@@ -1,19 +1,18 @@
+import { validateTurnstileChallenge } from '$lib/cloudflare-turnstile/validate.server.js';
 import { broadcastToAdmins } from '$lib/server/telegram/bot.js';
 import { composeMessage } from '$lib/server/telegram/msg.js';
 import { fail } from '@sveltejs/kit';
-import { z } from 'zod';
-
-const contactMsgSchema = z.object({
-	subject: z.string(),
-	email: z.string().email(),
-	message: z.string().transform((v) => v.trim())
-});
-
-type ContactMsg = z.infer<typeof contactMsgSchema>;
+import { contactMsgSchema, type ContactMsg } from './schema.js';
 
 export const actions = {
 	default: async (event) => {
-		const payload = Object.fromEntries(await event.request.formData());
+		const body = await event.request.formData();
+		const passedChallenge = await validateTurnstileChallenge(event.request, body);
+		if (!passedChallenge) {
+			return fail(403, { error: 'No pudimos confirmar que eres humano' });
+		}
+
+		const payload = Object.fromEntries(body);
 		const parsed = contactMsgSchema.safeParse(payload);
 
 		if (!parsed.success) {

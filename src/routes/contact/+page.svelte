@@ -1,5 +1,7 @@
 <script lang="ts">
 	import { enhance } from '$app/forms';
+	import TurnstileWidget from '$lib/cloudflare-turnstile/TurnstileWidget.svelte';
+
 	export let form;
 </script>
 
@@ -49,6 +51,7 @@
 			{#if form?.success}
 				<div class="font-bold text-center">Enviado, nos contactaremos contigo pronto.</div>
 			{/if}
+			<TurnstileWidget action="contact" />
 		</form>
 	</div>
 </main>
