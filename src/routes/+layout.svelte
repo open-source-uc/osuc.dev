@@ -1,6 +1,17 @@
 <script>
+	import { dev } from '$app/environment';
 	import './styles.css';
 </script>
+
+<svelte:head>
+	{#if !dev}
+		<script
+			defer
+			src="https://static.cloudflareinsights.com/beacon.min.js"
+			data-cf-beacon={`{"token": "b61e21e66efc4f88a31dd5f273a46edc"}`}
+		></script>
+	{/if}
+</svelte:head>
 
 <header class="bg-base-950 text-base-100">
 	<div class="container px-4 py-4 flex justify-between">

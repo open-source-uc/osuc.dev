@@ -1,37 +1,45 @@
-import { z } from 'zod';
-import { fail } from '@sveltejs/kit';
 import { broadcastToAdmins } from '$lib/server/telegram/bot.js';
 import { composeMessage } from '$lib/server/telegram/msg.js';
+import { validateTurnstileChallenge } from '$lib/cloudflare-turnstile/validate.server.js';
 
-const proposedProjectSchema = z.object({
-	name: z.string(),
-	description: z.string().transform((v) => v.trim()),
-	submitterWantsToLead: z.coerce.boolean(),
-	preformedTeamSize: z.coerce.number(),
-	email: z.string().email(),
-	contact: z.string()
-});
+import { superValidate, message } from 'sveltekit-superforms/server';
+import { proposedProjectSchema, type ProposedProject } from './schema.js';
 
-type ProposedProject = z.infer<typeof proposedProjectSchema>;
+type Schema = typeof proposedProjectSchema;
+type Message = { error: string; success?: undefined } | { error?: undefined; success: true };
+
+export async function load() {
+	const form = await superValidate<Schema, Message>(proposedProjectSchema);
+	return { form };
+}
 
 export const actions = {
 	default: async (event) => {
-		const payload = Object.fromEntries(await event.request.formData());
-		const parsed = proposedProjectSchema.safeParse(payload);
-
-		if (!parsed.success) {
-			const { fieldErrors } = parsed.error.flatten();
-			return fail(400, { error: 'Datos inválidos', data: payload, errors: fieldErrors });
+		const body = await event.request.formData();
+		const passedChallenge = await validateTurnstileChallenge(event.request, body);
+		if (!passedChallenge) {
+			const form = await superValidate<Schema, Message>(proposedProjectSchema);
+			return message(form, { error: 'No pudimos confirmar que eres humano' }, { status: 403 });
 		}
 
-		const { msg, entities } = formatProposedProject(parsed.data);
+		const form = await superValidate(body, proposedProjectSchema);
+
+		if (!form.valid) {
+			return message(form, { error: 'Datos inválido' }, { status: 422 });
+		}
+
+		const { msg, entities } = formatProposedProject(form.data);
 
 		try {
 			broadcastToAdmins(msg, { entities });
-			return { success: true };
+			return message(form, { success: true });
 		} catch (error) {
 			console.error(error);
-			return fail(500, { error: 'Error interno, por favor, reporta el error' });
+			return message(
+				form,
+				{ error: 'Error interno, por favor, reporta el error' },
+				{ status: 500 }
+			);
 		}
 	}
 };

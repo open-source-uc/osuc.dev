@@ -1,11 +1,28 @@
 <script lang="ts">
-	import { enhance } from '$app/forms';
-	export let form;
+	import { superForm } from 'sveltekit-superforms/client';
+	import TurnstileWidget from '$lib/cloudflare-turnstile/TurnstileWidget.svelte';
+
+	export let data;
+
+	let validSubmission = false;
+
+	const { form, enhance, capture, restore, message, reset } = superForm(data.form, {
+		taintedMessage: null,
+		onSubmit: () => (validSubmission = false),
+		onUpdated({ form }) {
+			if (form.valid && $message?.success) {
+				reset();
+				validSubmission = true;
+			}
+		}
+	});
+
+	export const snapshot = { capture, restore };
 </script>
 
 <main class="bg-base-50 text-base-900">
 	<div class="container-sm">
-		<h1 class="text-base-800 text-2xl font-semibold my-2 font-display">Propon un proyecto</h1>
+		<h1 class="text-base-800 text-2xl font-semibold my-2 font-display">Propón un proyecto</h1>
 		<p class="text-base-700 text-md font-medium">
 			Cada semestre formamos equipos para impulsar proyectos de código abierto. Si tienes una idea
 			de proyecto, ¡proponla! El proyecto tiene que ser sin fines de lucro, y debe apuntar a
@@ -15,7 +32,7 @@
 			<div class="mb-6">
 				<label for="pj-name" class="text-base-800 font-bold">Nombre del proyecto</label>
 				<p class="text-base-600 text-sm">
-					No es necesario que sea un nombre final, es solamemnte para identificarlo
+					No es necesario que sea un nombre final, es solamente para identificarlo
 				</p>
 				<input
 					id="pj-name"
@@ -24,6 +41,7 @@
 					class="text-sm w-full placeholder-base-400"
 					required
 					placeholder="Automatización de cosas"
+					bind:value={$form.name}
 				/>
 			</div>
 			<div class="flex flex-col gap-1 mb-6">
@@ -42,7 +60,14 @@
 						del proyecto. <strong>No es necesario que sea larga</strong>. Puedes incluir links.
 					</p>
 				</div>
-				<textarea id="pj-description" name="description" class="text-sm" rows="5" required />
+				<textarea
+					id="pj-description"
+					name="description"
+					class="text-sm"
+					rows="5"
+					required
+					bind:value={$form.description}
+				/>
 			</div>
 			<div class="text-base-800 font-bold mt-4 mb-2">Información Personal</div>
 			<div class="mb-4">
@@ -61,9 +86,9 @@
 					name="preformedTeamSize"
 					class="w-full text-sm"
 					type="number"
-					value="0"
 					min="0"
 					required
+					bind:value={$form.preformedTeamSize}
 				/>
 			</div>
 			<div class="mb-4">
@@ -72,9 +97,11 @@
 					id="pj-email"
 					name="email"
 					type="email"
+					autocomplete="email"
 					class="w-full placeholder-base-400 text-sm"
 					placeholder="tu-correo@uc.cl"
 					required
+					bind:value={$form.email}
 				/>
 			</div>
 			<div class="mb-4">
@@ -87,20 +114,22 @@
 					type="text"
 					class="w-full placeholder-base-400 text-sm"
 					required
+					bind:value={$form.contact}
 					placeholder="@tu-usuario"
 				/>
 			</div>
 			<button type="submit" class="bg-primary-500 mb-2 mt-6 w-full text-primary-50 px-4 py-2">
 				Enviar
 			</button>
-			{#if form?.error}
-				<div class="font-bold text-red-600 text-center">
-					Hubo un error al enviar el formulario ({form.error})
+			{#if $message && 'error' in $message}
+				<div class="font-bold text-red-600 text-center text-sm">
+					Hubo un error al enviar el formulario ({$message.error})
 				</div>
 			{/if}
-			{#if form?.success}
+			{#if validSubmission}
 				<div class="font-bold text-center">¡Gracias por proponer un proyecto!</div>
 			{/if}
+			<TurnstileWidget action="propose-project" />
 		</form>
 	</div>
 </main>
