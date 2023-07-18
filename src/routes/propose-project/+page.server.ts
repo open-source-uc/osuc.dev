@@ -19,7 +19,7 @@ export const actions = {
 		const passedChallenge = await validateTurnstileChallenge(event.request, body);
 		if (!passedChallenge) {
 			const form = await superValidate<Schema, Message>(proposedProjectSchema);
-			return message(form, { error: 'No pudimos confirmar que eres humano :(' }, { status: 403 });
+			return message(form, { error: 'No pudimos confirmar que eres humano' }, { status: 403 });
 		}
 
 		const form = await superValidate(body, proposedProjectSchema);
