@@ -56,7 +56,7 @@
 		tanto de desarrollo como de trabajo en equipo.
 	</p>
 
-	<h2>Qué vás a aprender</h2>
+	<h2>Qué vas a aprender</h2>
 	<ul>
 		<li>
 			Expandirás tus habilidades técnicas y creativas en torno a un proyecto de software con

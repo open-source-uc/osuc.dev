@@ -25,7 +25,7 @@
 		detalles más específicos.
 	</p>
 
-	<h2>Qué vás a aprender</h2>
+	<h2>Qué vas a aprender</h2>
 	<ul>
 		<li>Trabajar en equipo e impulsar iniciativas que ayuden a la comunidad.</li>
 		<li>Mejorar habilidades blandas, técnicas y creativas</li>
