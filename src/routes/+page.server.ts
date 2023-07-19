@@ -60,11 +60,9 @@ type PinnedReposResponse = {
 					openGraphImageUrl: string;
 					usesCustomOpenGraphImage: boolean;
 					url: string;
+					homepageUrl: string;
 					repositoryTopics: {
 						nodes: TopicEntry[];
-					};
-					primaryLanguage?: {
-						name: string;
 					};
 					issues: {
 						totalCount: number;
@@ -73,9 +71,6 @@ type PinnedReposResponse = {
 						totalCount: number;
 					};
 					needsHelpIssues: {
-						totalCount: number;
-					};
-					pullRequests: {
 						totalCount: number;
 					};
 				};

@@ -7,7 +7,6 @@
 	import moreImgSrc from '$assets/landing/more.jpg?h=512&format=webp';
 
 	export let data;
-	console.log(colaborateImgSrc);
 	const { pinnedRepos } = data;
 </script>
 

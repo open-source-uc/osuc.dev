@@ -9,6 +9,7 @@
 						description
 						openGraphImageUrl
 						usesCustomOpenGraphImage
+						homepageUrl
 						repositoryTopics(first: 8) {
 							nodes {
 								url
@@ -18,9 +19,6 @@
 								}
 							}
 						}
-						primaryLanguage {
-							name
-						}
 						issues(states: OPEN) {
 							totalCount
 						}
@@ -28,9 +26,6 @@
 							totalCount
 						}
 						needsHelpIssues: issues(labels: "help wanted", states: OPEN) {
-							totalCount
-						}
-						pullRequests {
 							totalCount
 						}
 					}

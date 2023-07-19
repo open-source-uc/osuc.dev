@@ -8,7 +8,7 @@
 <main class="bg-base-50 text-base-900">
 	<div class="container-sm">
 		<h1 class="text-base-800 text-2xl font-semibold my-2 font-display">Contactanos</h1>
-		<p class="text-base-700 text-md font-medium">
+		<p class="text-base-600 text-md font-medium">
 			Buscamos colaborar con diferentes grupos, comunidades y emrpesas para impulsar el desarrollo
 			de código abierto en la Universidad Católica. Si crees que podemos colaborar en proyectos,
 			talleres, u otras actividades, contactarnos.
