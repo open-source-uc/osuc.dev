@@ -1,0 +1,64 @@
+<div class="prose prose-headings:font-display my-8">
+	<h1>Equipo Interno</h1>
+
+	<p>
+		Para potenciar e impulsar la comunidad de código abierto en la universidad, trabajamos en
+		conjunto para organizar actividades, talleres, y proyectos. El equipo interno se podría pensar
+		como el “equipo de coordinación”, pero es más que eso: somos un grupo motivado que busca
+		colaborar e impulsar a los demás.
+	</p>
+
+	<h2>Que es lo que buscamos</h2>
+
+	<ul>
+		<li>Tienes iniciativa, puedes identificar oportunidades y liderar su ejecución.</li>
+		<li>Te motiva tanto aprender de los demás, como enseñar y apoyar a los demás.</li>
+		<li>Sabes colaborar y comunicarte bien con los demás.</li>
+	</ul>
+
+	<h2>Como funciona</h2>
+
+	<p>
+		Para lograr bien nuestros objetivos, nos dividimos en 3 grupos, cada uno con objetivos
+		distintos:
+	</p>
+
+	<h3>🚀 Grupo Proyectos</h3>
+	<p>
+		Vela que los grupos de desarrollo avancen y que los diferentes proyectos sean mantenidos. Sus
+		tareas principales son:
+	</p>
+	<ul>
+		<li>Organizar los equipos de desarrollo y apoyar en el avance de sus proyectos.</li>
+		<li>Mantener y crear proyectos y herramientas internas.</li>
+		<li>Ve la configuración y herramientas para el desarrollo (deploys, CI, etc).</li>
+		<li>Vela que existan issues y documentación para poder contribuir a proyectos.</li>
+	</ul>
+	<p>Para este grupo en específico buscamos:</p>
+	<ul>
+		<li>Tienes que saber programar, tienes cuenta de GitHub.</li>
+		<li>Tines una idea de como se planifican los proyectos de software.</li>
+		<li>Un gran plus es si tienes experiencia en proyectos reales (experiencia laboral).</li>
+	</ul>
+	<p>
+		Aunque este grupo sea “el lado técnico”, también son importantes las habilidades blandas, como
+		por ejemplo, cuando se forman los equipos de desarrollo.
+	</p>
+
+	<h3>🎺 Grupo Comunicaciones y Diseño</h3>
+	<p>
+		Se encarga de RRSS y guiar el diseño, buscando darle visibilidad de la organización y a sus
+		proyectos. Sus tareas principales son:
+	</p>
+	<ul>
+		<li>Difundir los proyectos activos y las actividades que se realizan.</li>
+		<li>Asistir con el diseño en los proyectos.</li>
+		<li>Mantener una linea gráfica para ser usada en publicaciones y proyectos.</li>
+		<li>Estar pendientes a RRSS y colaboraciones con otras iniciativas.</li>
+	</ul>
+	<p>Para esto buscamos:</p>
+	<ul>
+		<li>Te manejas con herramientas de diseño (usamos principalmente Figma).</li>
+		<li />
+	</ul>
+</div>
