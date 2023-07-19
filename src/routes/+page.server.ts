@@ -32,8 +32,10 @@ function cleanupPinnedRepos(data: PinnedReposResponse) {
 export async function load(event) {
 	const data = await github.graphql<PinnedReposResponse>(pinnedReposQuery);
 
+	// Cache using Cloudflare's cache Headers API
+	// https://developers.cloudflare.com/workers/runtime-apis/cache/#headers
 	event.setHeaders({
-		'Cache-Control': 'max-age=600'
+		'Cache-Control': 'public, max-age=15, stale-while-revalidate=5'
 	});
 
 	return {
