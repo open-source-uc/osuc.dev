@@ -1,3 +1,5 @@
+<a href="/join" class="underline">Volver atrás</a>
+
 <div class="prose prose-headings:font-display my-8">
 	<h1>Equipo Interno</h1>
 
@@ -15,12 +17,16 @@
 		<li>Te motiva tanto aprender de los demás, como enseñar y apoyar a los demás.</li>
 		<li>Sabes colaborar y comunicarte bien con los demás.</li>
 	</ul>
+	<p>
+		Además, deberás tener <a href="https://telegram.org/?setln=es">Telegram</a>. Más abajo verás
+		detalles más específicos.
+	</p>
 
 	<h2>¿Cómo funciona?</h2>
 
 	<p>
-		Para lograr bien nuestros objetivos, nos dividimos en 3 grupos, cada uno con objetivos
-		distintos:
+		Para lograr bien nuestros objetivos, nos dividimos en 3 grupos + carpos especiales, cada uno con
+		objetivos distintos. Cada grupo tiene un coordinador.
 	</p>
 
 	<h3>🚀 Grupo Proyectos</h3>
@@ -47,8 +53,8 @@
 
 	<h3>🎨 Grupo Comunicaciones y Diseño</h3>
 	<p>
-		Se encarga de RRSS y guiar el diseño de la organización, buscando darle visibilidad tanto a OSUC como a sus
-		proyectos. Sus tareas principales son:
+		Se encarga de RRSS y guiar el diseño de la organización, buscando darle visibilidad tanto a OSUC
+		como a sus proyectos. Sus tareas principales son:
 	</p>
 	<ul>
 		<li>Difundir los proyectos activos y las actividades que se realizan.</li>
@@ -59,24 +65,47 @@
 	<p>Para esto buscamos:</p>
 	<ul>
 		<li>Te manejas con herramientas de diseño (usamos principalmente Figma).</li>
-		<li>Tener experiencia en diseño gráfico (idealmente).<li/>
-		<li>Sepas no tomar críticas como un ataque personal.<li/>
+		<li>Tener experiencia en diseño gráfico (idealmente).</li>
+		<li>Sepas no tomar críticas como un ataque personal.</li>
 	</ul>
 
-	<h3>📠 Grupo Administrativo (?)</h3>
+	<h3>🤝 Grupo de Comunidad y Educación</h3>
 	<p>
-		Se encarga del funcionamiento y la representación "legal" de la organización.
+		Vela que las personas de la comunidad se sientan parte y puedan aprender, realizando actividades
+		recreativas y educativas. Sus tareas principales son:
 	</p>
 	<ul>
-		<li>Asegurarse de que se mantenga la visión y la misión de la organización.</li>
-		<li>Representar a OSUC frente la universidad y otras entidades.</li>
-		<li>Llevar a cabo las votaciones de los cargos de coordinación.</li>
-		<li>Mantener el contacto con sponsors y administrar las finanzas de la organización.</li>
+		<li>Organizar eventos educativos y recreativos.</li>
+		<li>Acercarse a otros alumnos participando en ferias y otras actividades.</li>
+		<li>Realizar un seguimiento a las personas, para ver que se puede mejorar.</li>
 	</ul>
-	<p>Para esto buscamos:</p>
+	<p>Para eso buscamos:</p>
 	<ul>
-		<li>Seas una persona responable y organizada.</li>
-		<li>Que puedas entablar conversaciones con personas que no conoces.<li/>
-		<li>Que seas capaz de liderar la organización y asegurar su buen funcionamiento durante el semestre.<li/>
+		<li>Que tengas motivación que contagie a los demás.</li>
+		<li>Puedes hablar y comunicarte bien con otras personas.</li>
+		<li>Eres creativo, puedes crear espacios amigables y especiales.</li>
 	</ul>
+
+	<h3>📠 Cargos especiales</h3>
+	<p>Son cargos que cubren necesidades particulares de la organización.</p>
+
+	<h4>Coordinador General</h4>
+	<p>
+		Es el que se encarga de darle dirección a la organización y asegurarse de que se cumplan los
+		objetivos. Planifica el semestre y las tareas a realizar. Se comunica con otras iniciativas y y
+		da la cara como líder de la iniciativa.
+	</p>
+
+	<h4>Encargado de Operaciones</h4>
+	<p>
+		Encargado de la logística de las actividades, proyectos y personas. Ve las finanzas y la
+		administración de la organización. Apoya al coordinador general en la organización de tareas y
+		planificación del semestre.
+	</p>
+
+	<h2>Form de postulación</h2>
+	<p>
+		Ahora no tenemos las postulaciones abiertas, anunciaremos cuando estén disponibles en el
+		<a href="https://t.me/+zQdotSmFEIRkMzcx">grupo de Telegram</a>.
+	</p>
 </div>

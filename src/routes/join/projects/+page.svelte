@@ -79,6 +79,7 @@
 	<h2>Form de postulación</h2>
 
 	<p>
-		Ahora no tenemos las postulaciones abiertas, anunciaremos cuando estén disponibles en Telegram.
+		Ahora no tenemos las postulaciones abiertas, anunciaremos cuando estén disponibles en el
+		<a href="https://t.me/+zQdotSmFEIRkMzcx">grupo de Telegram</a>. .
 	</p>
 </div>
