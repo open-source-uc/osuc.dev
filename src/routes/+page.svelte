@@ -15,6 +15,15 @@
 	<meta name="description" content="Svelte demo app" />
 </svelte:head>
 
+<div
+	class="px-4 py-2 flex flex-col sm:flex-row justify-center items-center sm:gap-4 bg-primary-100"
+>
+	<div class="text-center">Se ha lanzado el nuevo planner 🎉</div>
+	<a href="https://mallastest.ing.uc.cl" class="bg-primary-500 py-1 px-4 rounded text-primary-50"
+		>Ir al nuevo planner</a
+	>
+</div>
+
 <section class="hero z-10 overflow-hidden relative text-base-100 border-b-2 border-base-900">
 	<div class="container px-4 py-12 sm:py-32 text-center">
 		<h1 class="font-display font-bold text-4xl sm:text-6xl mb-4">Open Source UC</h1>
