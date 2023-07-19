@@ -11,15 +11,30 @@
 	</p>
 
 	<h2>¿Qué es lo que buscamos?</h2>
-
 	<ul>
 		<li>Tienes iniciativa, puedes identificar oportunidades y liderar su ejecución.</li>
 		<li>Te motiva tanto aprender de los demás, como enseñar y apoyar a los demás.</li>
 		<li>Sabes colaborar y comunicarte bien con los demás.</li>
+		<li>
+			Puedes dedicarle al menos <strong>6 horas</strong>
+			a la semana para trabajar.
+		</li>
 	</ul>
 	<p>
 		Además, deberás tener <a href="https://telegram.org/?setln=es">Telegram</a>. Más abajo verás
 		detalles más específicos.
+	</p>
+
+	<h2>Qué vás a aprender</h2>
+	<ul>
+		<li>Trabajar en equipo e impulsar iniciativas que ayuden a la comunidad.</li>
+		<li>Mejorar habilidades blandas, técnicas y creativas</li>
+		<li>Identificar oportunidades y solucionar problemas de distinto tipo.</li>
+		<li>Gestionar diferentes proyectos y actividades.</li>
+	</ul>
+	<p>
+		Es una oportunidad de participar en una comunidad de personas motivadas y talentosas, aportando
+		en lo que más te guste y aprendiendo de los demás.
 	</p>
 
 	<h2>¿Cómo funciona?</h2>

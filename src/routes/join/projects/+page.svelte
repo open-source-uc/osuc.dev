@@ -56,6 +56,24 @@
 		tanto de desarrollo como de trabajo en equipo.
 	</p>
 
+	<h2>Qué vás a aprender</h2>
+	<ul>
+		<li>
+			Expandirás tus habilidades técnicas y creativas en torno a un proyecto de software con
+			usuarios reales y formato similar a un trabajo real.
+		</li>
+		<li>
+			Aprenderás sobre nuevas tecnologías y herramientas modernas que se utilizan en el desarrollo
+			de software.
+		</li>
+		<li>Practicarás habilidades de trabajo en equipo, comunicación y organización.</li>
+	</ul>
+	<p>
+		Con esto podrás mejorar tus habilidades profesionales y poner en la practica lo que aprendes en
+		los cursos. Además podrás participar en talleres, y recibir consejos y feedback de personas con
+		experiencia en el área.
+	</p>
+
 	<h2>Proceso de postulación</h2>
 
 	<ol>
@@ -73,8 +91,6 @@
 			que se desarrollaran y las personas que formarán los equipos.
 		</li>
 	</ol>
-
-	<p>Con esto buscamos crear equipos que puedan trabajar</p>
 
 	<h2>Form de postulación</h2>
 
