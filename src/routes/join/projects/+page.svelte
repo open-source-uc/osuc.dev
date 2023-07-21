@@ -29,7 +29,7 @@
 		<a href="https://github.com">GitHub</a>. Puedes ver
 		<a
 			href="https://docs.github.com/es/get-started/onboarding/getting-started-with-your-github-account"
-			>está guía de GitHub</a
+			>esta guía de GitHub</a
 		>
 		si es que no tienes cuenta o configurado Git. Cualquier duda puedes preguntar por Telegram y Discord
 		(links en la <a href="/">página principal</a>).
