@@ -1,38 +1,22 @@
-# create-svelte
+# osuc.dev
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+Sitio web oficial de Open Source UC
 
-## Creating a project
+## Tech Stack
+- Vite
+- Svelte
+- TailwindCSS
 
-If you're seeing this, you've probably already done this step. Congrats!
+## Desarrollo
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+Copia el archivo `.env.example` a `.env` y reemplaza los valores con los tuyos. No te preocupes, este archivo está ignorado por git.
 
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+Instala las dependencias con `npm install` (o `pnpm install` o `yarn`)
 
-## Developing
+Inicia el servidor de desarrollo con `npm run dev` (o `pnpm run dev` o `yarn dev`)
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+O empieza el servidor y abre la app en una nueva pestaña del navegador con `npm run dev -- --open` (o `pnpm run dev -- --open` o `yarn dev -- --open`)
 
-```bash
-npm run dev
+## Producción
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+Haz un build de la app con `npm run build` (o `pnpm run build` o `yarn build`)
