@@ -25,7 +25,7 @@
 		detalles más específicos.
 	</p>
 
-	<h2>Qué vas a aprender</h2>
+	<h2>¿Qué vas a aprender?</h2>
 	<ul>
 		<li>Trabajar en equipo e impulsar iniciativas que ayuden a la comunidad.</li>
 		<li>Mejorar habilidades blandas, técnicas y creativas</li>
@@ -46,14 +46,14 @@
 
 	<h3>🚀 Grupo Proyectos</h3>
 	<p>
-		Vela que los grupos de desarrollo avancen y que los diferentes proyectos sean mantenidos. Sus
+		Vela por que los grupos de desarrollo avancen y que los diferentes proyectos sean mantenidos. Sus
 		tareas principales son:
 	</p>
 	<ul>
 		<li>Organizar los equipos de desarrollo y apoyar en el avance de sus proyectos.</li>
 		<li>Mantener y crear proyectos y herramientas internas.</li>
 		<li>Ve la configuración y herramientas para el desarrollo (deploys, CI, etc).</li>
-		<li>Vela que existan issues y documentación para poder contribuir a proyectos.</li>
+		<li>Vela por que existan issues y documentación para poder contribuir a proyectos.</li>
 	</ul>
 	<p>Para este grupo en específico buscamos:</p>
 	<ul>
@@ -74,7 +74,7 @@
 	<ul>
 		<li>Difundir los proyectos activos y las actividades que se realizan.</li>
 		<li>Asistir con el diseño en los proyectos.</li>
-		<li>Mantener una linea gráfica para ser usada en publicaciones y proyectos.</li>
+		<li>Mantener una línea gráfica para ser usada en publicaciones y proyectos.</li>
 		<li>Estar pendientes a RRSS y colaboraciones con otras iniciativas.</li>
 	</ul>
 	<p>Para esto buscamos:</p>
@@ -86,7 +86,7 @@
 
 	<h3>🤝 Grupo de Comunidad y Educación</h3>
 	<p>
-		Vela que las personas de la comunidad se sientan parte y puedan aprender, realizando actividades
+		Vela por que las personas de la comunidad se sientan parte y puedan aprender, realizando actividades
 		recreativas y educativas. Sus tareas principales son:
 	</p>
 	<ul>
@@ -107,7 +107,7 @@
 	<h4>Coordinador General</h4>
 	<p>
 		Es el que se encarga de darle dirección a la organización y asegurarse de que se cumplan los
-		objetivos. Planifica el semestre y las tareas a realizar. Se comunica con otras iniciativas y y
+		objetivos. Planifica el semestre y las tareas a realizar. Se comunica con otras iniciativas y
 		da la cara como líder de la iniciativa.
 	</p>
 

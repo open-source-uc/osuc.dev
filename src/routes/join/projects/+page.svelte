@@ -29,17 +29,17 @@
 		<a href="https://github.com">GitHub</a>. Puedes ver
 		<a
 			href="https://docs.github.com/es/get-started/onboarding/getting-started-with-your-github-account"
-			>está guía de GitHub</a
+			>esta guía de GitHub</a
 		>
 		si es que no tienes cuenta o configurado Git. Cualquier duda puedes preguntar por Telegram y Discord
 		(links en la <a href="/">página principal</a>).
 	</p>
 
-	<h2>Que es lo que harás</h2>
+	<h2>¿Qué es lo que harás?</h2>
 
 	<ul>
 		<li>
-			Participaras en la planificación y el desarrollo de un proyecto de software a lo largo del
+			Participarás en la planificación y el desarrollo de un proyecto de software a lo largo del
 			semestre.
 		</li>
 		<li>
@@ -56,7 +56,7 @@
 		tanto de desarrollo como de trabajo en equipo.
 	</p>
 
-	<h2>Qué vas a aprender</h2>
+	<h2>¿Qué vas a aprender?</h2>
 	<ul>
 		<li>
 			Expandirás tus habilidades técnicas y creativas en torno a un proyecto de software con
