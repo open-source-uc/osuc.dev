@@ -10,6 +10,12 @@
 		tecnologías.
 	</p>
 
+	<p>
+		Los proyectos son elegidos por el equipo interno y serán anunciados antes que terminen las
+		postulaciones. Puedes <a href="/propose-project">proponer ideas aquí</a>. Las postulaciones
+		cierran en la tercera semana del semestre.
+	</p>
+
 	<h2>Que es lo que buscamos</h2>
 
 	<ul>
@@ -18,7 +24,7 @@
 		<li>Quieres aprender nuevas tecnologías para resolver nuevos problemas.</li>
 		<li>
 			Puedes dedicarle al menos <strong>4 horas</strong>
-			a la semana para trabajar.
+			a la semana para trabajar y reunirte con tu equipo cada 2 semanas.
 		</li>
 	</ul>
 
@@ -93,9 +99,13 @@
 	</ol>
 
 	<h2>Form de postulación</h2>
-
-	<p>
-		Ahora no tenemos las postulaciones abiertas, anunciaremos cuando estén disponibles en el
-		<a href="https://t.me/+zQdotSmFEIRkMzcx">grupo de Telegram</a>. .
-	</p>
+	<iframe
+		title="Formulario de postulación"
+		class="airtable-embed"
+		src="https://airtable.com/embed/appSIzGdt5w6Jmuj1/shrO4vpotfffkgivl?prefill_Tipo=🧑‍💻+Equipo+de+Desarrollo"
+		frameborder="0"
+		width="100%"
+		height="533"
+		style="background: transparent; border: 1px solid #ccc;"
+	/>
 </div>

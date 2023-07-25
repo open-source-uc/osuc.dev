@@ -52,7 +52,7 @@
 						<li>El contexto del proyecto y el problema que busca resolver (¿por qué?)</li>
 						<li>Cuales son los objetivos de la solución (¿qué es lo que se busca hacer?)</li>
 						<li>Cuál es el público objetivo (¿para quién?)</li>
-						<li>Requerimientos escenciales (¿qué se necesita para que el proyecto funcione?)</li>
+						<li>Requerimientos esenciales (¿qué se necesita para que el proyecto funcione?)</li>
 					</ul>
 					<p>
 						Puedes incluir tecnologías que te gustaría usar si quieres ser parte del equipo de
