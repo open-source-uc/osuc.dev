@@ -13,7 +13,7 @@
 	<p>
 		Los proyectos son elegidos por el equipo interno y serán anunciados antes que terminen las
 		postulaciones. Puedes <a href="/propose-project">proponer ideas aquí</a>. Las postulaciones
-		cierran en la tercera semana del semestre.
+		cierran cerca de la tercera semana del semestre.
 	</p>
 
 	<h2>Que es lo que buscamos</h2>
