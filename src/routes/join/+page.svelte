@@ -14,8 +14,8 @@
 	<h2>Equipos de Desarrollo</h2>
 	<p>
 		Únete como desarrollador en uno de los proyectos del semestre, dedicándole al menos 4 horas de
-		trabajo a la semana y reuniéndote con tu equipo cada 2 semanas. Recibirás ayuda y feedback
-		durante todo el proceso para que puedas aprender como desarrollar software en equipo.
+		trabajo a la semana y reuniéndote con tu equipo cada semana. Recibirás ayuda y feedback durante
+		todo el proceso para que puedas aprender como desarrollar software en equipo.
 	</p>
 
 	<div class="not-prose">
