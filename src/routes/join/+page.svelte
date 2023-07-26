@@ -37,9 +37,11 @@
 		<li>Marketing y Diseño: ve la difusión y apoya en el diseño de los proyectos</li>
 		<li>Comunidad y Educación: crea espacios recreativos y educacionales</li>
 	</ul>
-	<a
-		href="/join/internal"
-		class="hover:underline border px-4 py-1 w-full block rounded bg-primary-500 text-primary-50"
-		>Se parte</a
-	>
+	<div class="not-prose">
+		<a
+			href="/join/internal"
+			class="hover:underline border px-4 py-1 w-full block rounded bg-primary-500 text-primary-50"
+			>Se parte</a
+		>
+	</div>
 </div>

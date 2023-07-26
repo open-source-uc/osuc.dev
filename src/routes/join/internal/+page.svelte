@@ -46,7 +46,7 @@
 	<h2>¿Cómo funciona?</h2>
 
 	<p>
-		Para lograr bien nuestros objetivos, nos dividimos en 3 grupos + carpos especiales, cada uno con
+		Para lograr bien nuestros objetivos, nos dividimos en 3 grupos + cargos especiales, cada uno con
 		objetivos distintos. Cada grupo tiene un coordinador.
 	</p>
 
