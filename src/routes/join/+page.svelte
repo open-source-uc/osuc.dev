@@ -1,4 +1,4 @@
-<div class="prose mt-8 prose-headings:font-display">
+<div class="prose my-8 prose-headings:font-display">
 	<h1>Únete a la comunidad</h1>
 
 	<p>
@@ -6,46 +6,42 @@
 		que sean útiles para la comunidad y realizando actividades que permitan aprender y compartir
 		conocimiento sobre desarrollo de software.
 	</p>
-
 	<p>
 		Para esto, necesitamos personas motivadas que nos ayuden. Tenemos 2 formas en las que te puedes
 		sumar:
 	</p>
+
+	<h2>Equipos de Desarrollo</h2>
+	<p>
+		Únete como desarrollador en uno de los proyectos del semestre, dedicándole al menos 4 horas de
+		trabajo a la semana y reuniéndote con tu equipo cada semana. Recibirás ayuda y feedback durante
+		todo el proceso para que puedas aprender como desarrollar software en equipo.
+	</p>
+
+	<div class="not-prose">
+		<a
+			href="/join/dev"
+			class="hover:underline border px-4 py-1 w-full block rounded bg-primary-500 text-primary-50"
+			>Se parte</a
+		>
+	</div>
+
+	<h2>Equipo Interno</h2>
+	<p>
+		Apoya en la organización de actividades y proyectos, potenciando la comunidad de código abierto
+		en la universidad. Apoya a los equipos de desarrollo y mantención de proyectos, la difusión de
+		actividades y proyectos, o la organización de diferentes actividades. Se divide en 3 grupos:
+	</p>
+	<ul>
+		<li>Proyectos: organiza los equipos de desarrollo y mantiene proyectos</li>
+		<li>Marketing y Diseño: ve la difusión y apoya en el diseño de los proyectos</li>
+		<li>Comunidad y Educación: crea espacios recreativos y educacionales</li>
+	</ul>
+	<div class="not-prose">
+		<a
+			href="/join/internal"
+			class="hover:underline border px-4 py-1 w-full block rounded bg-primary-500 text-primary-50"
+			>Se parte</a
+		>
+	</div>
 </div>
-
-<ul class="grid grid-cols-2 gap-2 my-4">
-	<li class="border flex flex-col bg-base-50 px-4 py-4 border-base-200 rounded">
-		<div class="flex-grow">
-			<h2 class="font-bold text-xl text-base-800 my-1">Equipos de Desarrollo</h2>
-			<p class="text-base-600 leading-tight my-1">
-				Únete como desarrollador a uno de los proyectos guiados.
-			</p>
-			<a href="/join/projects" class="btn">Conoce más</a>
-		</div>
-	</li>
-	<li class="border flex flex-col bg-base-50 px-4 py-4 border-base-200 rounded">
-		<div class="flex-grow">
-			<h2 class="font-bold text-xl text-base-800">Equipo Interno</h2>
-			<p class="text-base-600 leading-tight my-1">
-				Apoya en la organización de actividades y proyectos.
-			</p>
-		</div>
-		<a href="/join/internal" class="btn">Conoce más</a>
-	</li>
-</ul>
-
-<slot />
-
-<style>
-	.btn {
-		margin-top: theme('margin.4');
-		display: block;
-		padding: theme('padding.1') theme('padding.4');
-		border-radius: theme('borderRadius.DEFAULT');
-		background: theme('colors.primary.500');
-		color: theme('colors.primary.50');
-	}
-	.btn:hover {
-		text-decoration: underline;
-	}
-</style>

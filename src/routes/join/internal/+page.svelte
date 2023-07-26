@@ -10,6 +10,11 @@
 		colaborar e impulsar a los demás.
 	</p>
 
+	<p>
+		Las postulaciones parten a finales de cada semestre y cierran en las primeras semanas del
+		semestre siguiente. Si quieres saber más, puedes preguntar en el grupo de Telegram.
+	</p>
+
 	<h2>¿Qué es lo que buscamos?</h2>
 	<ul>
 		<li>Tienes iniciativa, puedes identificar oportunidades y liderar su ejecución.</li>
@@ -17,7 +22,8 @@
 		<li>Sabes colaborar y comunicarte bien con los demás.</li>
 		<li>
 			Puedes dedicarle al menos <strong>6 horas</strong>
-			a la semana para trabajar.
+			a la semana para trabajar (esto considera reuniones, actividades y responder mensajes, se siente
+			menos de lo que es).
 		</li>
 	</ul>
 	<p>
@@ -40,53 +46,56 @@
 	<h2>¿Cómo funciona?</h2>
 
 	<p>
-		Para lograr bien nuestros objetivos, nos dividimos en 3 grupos + carpos especiales, cada uno con
+		Para lograr bien nuestros objetivos, nos dividimos en 3 grupos + cargos especiales, cada uno con
 		objetivos distintos. Cada grupo tiene un coordinador.
 	</p>
 
 	<h3>🚀 Grupo Proyectos</h3>
 	<p>
-		Vela por que los grupos de desarrollo avancen y que los diferentes proyectos sean mantenidos. Sus
+		Vela que los grupos de desarrollo avancen y que los diferentes proyectos sean mantenidos. Sus
 		tareas principales son:
 	</p>
 	<ul>
 		<li>Organizar los equipos de desarrollo y apoyar en el avance de sus proyectos.</li>
 		<li>Mantener y crear proyectos y herramientas internas.</li>
 		<li>Ve la configuración y herramientas para el desarrollo (deploys, CI, etc).</li>
-		<li>Vela por que existan issues y documentación para poder contribuir a proyectos.</li>
+		<li>Vela que existan issues y documentación para poder contribuir a proyectos.</li>
 	</ul>
 	<p>Para este grupo en específico buscamos:</p>
 	<ul>
 		<li>Tienes que saber programar, tienes que tener cuenta de GitHub.</li>
-		<li>Tines una idea de como se planifican los proyectos de software.</li>
-		<li>Un gran plus es si tienes experiencia en proyectos reales (experiencia laboral).</li>
+		<li>Tienes una idea de como se planifican los proyectos de software.</li>
+		<li>Un gran plus es si tienes experiencia en proyectos reales (como en prácticas).</li>
 	</ul>
 	<p>
 		Aunque este grupo sea “el lado técnico”, también son importantes las habilidades blandas, como
 		por ejemplo, para cuando se forman los equipos de desarrollo.
 	</p>
 
-	<h3>🎨 Grupo Comunicaciones y Diseño</h3>
+	<h3>🎨 Grupo Marketing y Diseño</h3>
 	<p>
 		Se encarga de RRSS y guiar el diseño de la organización, buscando darle visibilidad tanto a OSUC
 		como a sus proyectos. Sus tareas principales son:
 	</p>
 	<ul>
 		<li>Difundir los proyectos activos y las actividades que se realizan.</li>
-		<li>Asistir con el diseño en los proyectos.</li>
-		<li>Mantener una línea gráfica para ser usada en publicaciones y proyectos.</li>
-		<li>Estar pendientes a RRSS y colaboraciones con otras iniciativas.</li>
+		<li>Apoyar en el diseño gráfico y usabilidad de los proyectos.</li>
+		<li>Mantener una línea gráfica para ser usada en publicaciones.</li>
 	</ul>
 	<p>Para esto buscamos:</p>
 	<ul>
 		<li>Te manejas con herramientas de diseño (usamos principalmente Figma).</li>
-		<li>Tener experiencia en diseño gráfico (idealmente).</li>
-		<li>Sepas no tomar críticas como un ataque personal.</li>
+		<li>Sabes o te gustaría aprender sobre diseño gráfico.</li>
+		<li>Sepas tanto tomar como hacer críticas constructivas.</li>
 	</ul>
-
-	<h3>🤝 Grupo de Comunidad y Educación</h3>
 	<p>
-		Vela por que las personas de la comunidad se sientan parte y puedan aprender, realizando actividades
+		Aquí se aprecia mucho la iniciativa: identificar oportunidades de difusión y mejora de
+		experiencia de usuario son claves para potenciar la iniciativa y sus proyectos.
+	</p>
+
+	<h3>👥 Grupo de Comunidad y Educación</h3>
+	<p>
+		Vela que las personas de la comunidad se sientan parte y puedan aprender, realizando actividades
 		recreativas y educativas. Sus tareas principales son:
 	</p>
 	<ul>
@@ -100,6 +109,7 @@
 		<li>Puedes hablar y comunicarte bien con otras personas.</li>
 		<li>Eres creativo, puedes crear espacios amigables y especiales.</li>
 	</ul>
+	<p>Es un rol de bienestar, como se ha implementado en varios cursos de la escuela.</p>
 
 	<h3>📠 Cargos especiales</h3>
 	<p>Son cargos que cubren necesidades particulares de la organización.</p>
@@ -107,8 +117,8 @@
 	<h4>Coordinador General</h4>
 	<p>
 		Es el que se encarga de darle dirección a la organización y asegurarse de que se cumplan los
-		objetivos. Planifica el semestre y las tareas a realizar. Se comunica con otras iniciativas y
-		da la cara como líder de la iniciativa.
+		objetivos. Planifica el semestre y las tareas a realizar. Se comunica con otras iniciativas y da
+		la cara como líder de la iniciativa.
 	</p>
 
 	<h4>Encargado de Operaciones</h4>
@@ -118,9 +128,23 @@
 		planificación del semestre.
 	</p>
 
-	<h2>Form de postulación</h2>
+	<h4>Mentores</h4>
 	<p>
-		Ahora no tenemos las postulaciones abiertas, anunciaremos cuando estén disponibles en el
-		<a href="https://t.me/+zQdotSmFEIRkMzcx">grupo de Telegram</a>.
+		Dan apoyo y consejos a los miembros, principalmente en áreas técnicas. No es necesario que
+		participen en reuniones y actividades, pero deberán aconsejar a los equipos cuando se necesite.
+		Requiere experiencia y pueden ser egresados. Se estima que el trabajo es de <strong
+			>1 hora a la semana</strong
+		>.
 	</p>
+
+	<h2>Form de postulación</h2>
+	<iframe
+		title="Formulario de postulación"
+		class="airtable-embed"
+		src="https://airtable.com/embed/appSIzGdt5w6Jmuj1/shrO4vpotfffkgivl?prefill_Tipo=👥+Equipo+Interno"
+		frameborder="0"
+		width="100%"
+		height="533"
+		style="background: transparent; border: 1px solid #ccc;"
+	/>
 </div>
