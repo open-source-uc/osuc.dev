@@ -30,8 +30,13 @@
 	<p>
 		Apoya en la organización de actividades y proyectos, potenciando la comunidad de código abierto
 		en la universidad. Apoya a los equipos de desarrollo y mantención de proyectos, la difusión de
-		actividades y proyectos, o la organización de diferentes actividades.
+		actividades y proyectos, o la organización de diferentes actividades. Se divide en 3 grupos:
 	</p>
+	<ul>
+		<li>Proyectos: organiza los equipos de desarrollo y mantiene proyectos</li>
+		<li>Marketing y Diseño: ve la difusión y apoya en el diseño de los proyectos</li>
+		<li>Comunidad y Educación: crea espacios recreativos y educacionales</li>
+	</ul>
 	<a
 		href="/join/internal"
 		class="hover:underline border px-4 py-1 w-full block rounded bg-primary-500 text-primary-50"

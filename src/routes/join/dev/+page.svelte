@@ -53,7 +53,7 @@
 			+ planning” para planificar el trabajo de la semana.
 		</li>
 		<li>
-			Trabajaras en torno a requerimientos que serán negociados con tu equipo y con feedback que
+			Trabajarás en torno a requerimientos que serán negociados con tu equipo y con feedback que
 			recibirán con usuarios de la aplicación.
 		</li>
 	</ul>
@@ -75,8 +75,8 @@
 		<li>Practicarás habilidades de trabajo en equipo, comunicación y organización.</li>
 	</ul>
 	<p>
-		Con esto podrás mejorar tus habilidades profesionales y poner en la practica lo que aprendes en
-		los cursos. Además podrás participar en talleres, y recibir consejos y feedback de personas con
+		Con esto podrás mejorar tus habilidades profesionales y poner en la práctica lo que aprendes en
+		los cursos. Además, podrás participar en talleres, y recibir consejos y feedback de personas con
 		experiencia en el área.
 	</p>
 
@@ -85,7 +85,7 @@
 	<ol>
 		<li>
 			Al principio de cada semestre, se abrirá un formulario donde te pediremos que respondas
-			algunas preguntas, como cuanta experiencia tienes y porqué te gustaría ser parte.
+			algunas preguntas, como cuanta experiencia tienes y por qué te gustaría ser parte.
 		</li>
 		<li>
 			Luego tendrás una entrevista para que podamos conocernos mutuamente. No es necesario que

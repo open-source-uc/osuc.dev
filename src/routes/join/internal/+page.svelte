@@ -52,19 +52,19 @@
 
 	<h3>🚀 Grupo Proyectos</h3>
 	<p>
-		Vela por que los grupos de desarrollo avancen y que los diferentes proyectos sean mantenidos.
-		Sus tareas principales son:
+		Vela que los grupos de desarrollo avancen y que los diferentes proyectos sean mantenidos. Sus
+		tareas principales son:
 	</p>
 	<ul>
 		<li>Organizar los equipos de desarrollo y apoyar en el avance de sus proyectos.</li>
 		<li>Mantener y crear proyectos y herramientas internas.</li>
 		<li>Ve la configuración y herramientas para el desarrollo (deploys, CI, etc).</li>
-		<li>Vela por que existan issues y documentación para poder contribuir a proyectos.</li>
+		<li>Vela que existan issues y documentación para poder contribuir a proyectos.</li>
 	</ul>
 	<p>Para este grupo en específico buscamos:</p>
 	<ul>
 		<li>Tienes que saber programar, tienes que tener cuenta de GitHub.</li>
-		<li>Tines una idea de como se planifican los proyectos de software.</li>
+		<li>Tienes una idea de como se planifican los proyectos de software.</li>
 		<li>Un gran plus es si tienes experiencia en proyectos reales (como en prácticas).</li>
 	</ul>
 	<p>
@@ -79,9 +79,8 @@
 	</p>
 	<ul>
 		<li>Difundir los proyectos activos y las actividades que se realizan.</li>
-		<li>Asistir con el diseño en los proyectos.</li>
-		<li>Mantener una línea gráfica para ser usada en publicaciones y proyectos.</li>
-		<li>Estar pendientes a RRSS y colaboraciones con otras iniciativas.</li>
+		<li>Apoyar en el diseño gráfico y usabilidad de los proyectos.</li>
+		<li>Mantener una línea gráfica para ser usada en publicaciones.</li>
 	</ul>
 	<p>Para esto buscamos:</p>
 	<ul>
@@ -96,8 +95,8 @@
 
 	<h3>👥 Grupo de Comunidad y Educación</h3>
 	<p>
-		Vela por que las personas de la comunidad se sientan parte y puedan aprender, realizando
-		actividades recreativas y educativas. Sus tareas principales son:
+		Vela que las personas de la comunidad se sientan parte y puedan aprender, realizando actividades
+		recreativas y educativas. Sus tareas principales son:
 	</p>
 	<ul>
 		<li>Organizar eventos educativos y recreativos.</li>
