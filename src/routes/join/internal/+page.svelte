@@ -109,7 +109,10 @@
 		<li>Puedes hablar y comunicarte bien con otras personas.</li>
 		<li>Eres creativo, puedes crear espacios amigables y especiales.</li>
 	</ul>
-	<p>Es un rol de bienestar, como se ha implementado en varios cursos de la escuela.</p>
+	<p>
+		Este toma un rol que vela por bienestar de las personas, y puede identificar oportunidades para
+		mejorar la experiencia de los miembros de la comunidad.
+	</p>
 
 	<h3>📠 Cargos especiales</h3>
 	<p>Son cargos que cubren necesidades particulares de la organización.</p>
