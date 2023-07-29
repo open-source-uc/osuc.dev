@@ -14,7 +14,7 @@ const config = {
 					margin: '0 auto',
 					maxWidth: theme('screens.lg'),
 					padding: theme('spacing.4'),
-					[theme('screens.md')]: {
+					[`@media (min-width: ${theme('screens.md')})`]: {
 						padding: theme('spacing.8')
 					}
 				},
@@ -22,7 +22,7 @@ const config = {
 					margin: '0 auto',
 					maxWidth: theme('screens.sm'),
 					padding: theme('spacing.4'),
-					[theme('screens.md')]: {
+					[`@media (min-width: ${theme('screens.md')})`]: {
 						padding: theme('spacing.8')
 					}
 				}
