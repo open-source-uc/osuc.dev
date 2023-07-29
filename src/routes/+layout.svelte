@@ -1,6 +1,25 @@
-<script>
+<script lang="ts">
 	import { dev } from '$app/environment';
+	import { page } from '$app/stores';
+	import { derived } from 'svelte/store';
+
 	import './styles.css';
+
+	import openGraphImgUrl from '$assets/og/small.png';
+	import twitterImgUrl from '$assets/og/base.png';
+
+	const meta = derived(
+		page,
+		({ data: { meta = {} } }) =>
+			({
+				title: meta.title || 'Open Source UC',
+				description:
+					meta.description ||
+					'Open Source UC es una iniciativa de estudiantes de la PUC Chile que busca promover el desarrollo de software de código abierto.',
+				openGraphImgUrl: meta.openGraphImgUrl || openGraphImgUrl,
+				twitterImgUrl: meta.twitterImgUrl || twitterImgUrl
+			} as PageMetadata)
+	);
 </script>
 
 <svelte:head>
@@ -11,6 +30,15 @@
 			data-cf-beacon={`{"token": "b61e21e66efc4f88a31dd5f273a46edc"}`}
 		></script>
 	{/if}
+	<meta property="og:type" content="website" />
+	<meta property="og:site_name" content="osuc.dev" />
+	<meta property="og:title" content={$meta.title} />
+	<meta property="og:description" content={$meta.description} />
+	<meta property="og:image" content={$meta.openGraphImgUrl} />
+	<meta property="twitter:card" content="summary_large_image" />
+	<meta property="twitter:title" content={$meta.title} />
+	<meta property="twitter:description" content={$meta.description} />
+	<meta property="twitter:image" content={$meta.twitterImgUrl} />
 </svelte:head>
 
 <header class="bg-base-950 text-base-100">
