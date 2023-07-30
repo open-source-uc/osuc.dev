@@ -78,7 +78,7 @@
 			</div>
 			<div class="mb-4">
 				<label for="pj-preformed-team-size" class="block text-sm font-semibold"
-					>Indica cuantas personas conoces (sin considerarnte) que te gustarían que participaran en
+					>Indica cuantas personas conoces (sin considerarte) que te gustarían que participaran en
 					tu equipo. Si no tienes un equipo, deja el valor en 0.
 				</label>
 				<input
