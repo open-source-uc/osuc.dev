@@ -182,7 +182,7 @@
 							Grupo de Telegram
 						</a>
 						<a
-							href="https://github.com/open-source-uc"
+							href="https://discord.gg/jRdQCGn6yS"
 							class="flex gap-2 border justify-center flex-grow border-primary-50 rounded py-2 px-2 hover:underline"
 						>
 							<svg xmlns="http://www.w3.org/2000/svg" class="h-6" viewBox="0 0 24 24"
