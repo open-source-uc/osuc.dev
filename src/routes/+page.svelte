@@ -18,9 +18,9 @@
 <div
 	class="px-4 py-2 flex flex-col sm:flex-row justify-center items-center sm:gap-4 bg-primary-100"
 >
-	<div class="text-center">Se ha lanzado el nuevo planner 🎉</div>
-	<a href="https://mallastest.ing.uc.cl" class="bg-primary-500 py-1 px-4 rounded text-primary-50"
-		>Ir al nuevo planner</a
+	<div class="text-center">Tenemos un nuevo evento</div>
+	<a href="https://codefest.osuc.dev" class="bg-primary-500 py-1 px-4 rounded text-primary-50"
+		>Ir a la hackatón</a
 	>
 </div>
 
