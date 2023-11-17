@@ -40,7 +40,7 @@
 				>Más sobre nosotros</a
 			>
 			<a href="/join" class="rounded bg-primary-600 hover:underline text-primary-50 px-4 py-2"
-				>Se parte</a
+				>Sé parte</a
 			>
 		</div>
 	</div>
