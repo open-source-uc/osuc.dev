@@ -1,3 +1,8 @@
+<script lang="ts">
+	const formID = 'app3W2yfnucBj7Ktg/shrTaHJaPvu9Jj6In';
+	export let internalFormURL = `https://airtable.com/embed/${formID}?prefill_Tipo=👥+Equipo+Interno`;
+</script>
+
 <a href="/join" class="underline">Volver atrás</a>
 
 <div class="prose prose-headings:font-display my-8">
@@ -144,7 +149,7 @@
 	<iframe
 		title="Formulario de postulación"
 		class="airtable-embed"
-		src="https://airtable.com/embed/appSIzGdt5w6Jmuj1/shrO4vpotfffkgivl?prefill_Tipo=👥+Equipo+Interno"
+		src="{internalFormURL}"
 		frameborder="0"
 		width="100%"
 		height="533"
