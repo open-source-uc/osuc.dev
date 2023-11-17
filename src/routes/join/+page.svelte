@@ -22,7 +22,7 @@
 		<a
 			href="/join/dev"
 			class="hover:underline border px-4 py-1 w-full block rounded bg-primary-500 text-primary-50"
-			>Se parte</a
+			>Sé parte</a
 		>
 	</div>
 
@@ -41,7 +41,7 @@
 		<a
 			href="/join/internal"
 			class="hover:underline border px-4 py-1 w-full block rounded bg-primary-500 text-primary-50"
-			>Se parte</a
+			>Sé parte</a
 		>
 	</div>
 </div>

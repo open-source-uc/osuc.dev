@@ -11,16 +11,16 @@
 </script>
 
 <svelte:head>
-	<title>Home</title>
-	<meta name="description" content="Svelte demo app" />
+	<title>Open Source UC</title>
+	<meta name="description" content="Somos una comunidad de estudiantes de la UC Chile apasionada por crear e impulsar proyectos bacanes de código abierto" />
 </svelte:head>
 
 <div
 	class="px-4 py-2 flex flex-col sm:flex-row justify-center items-center sm:gap-4 bg-primary-100"
 >
-	<div class="text-center">Tenemos un nuevo evento</div>
-	<a href="https://codefest.osuc.dev" class="bg-primary-500 py-1 px-4 rounded text-primary-50"
-		>Ir a la hackatón</a
+	<div class="text-center">Abrimos las postulaciones al equipo OSUC</div>
+	<a href="https://osuc.dev/join" class="bg-primary-500 py-1 px-4 rounded text-primary-50"
+		>Únete</a
 	>
 </div>
 
@@ -40,7 +40,7 @@
 				>Más sobre nosotros</a
 			>
 			<a href="/join" class="rounded bg-primary-600 hover:underline text-primary-50 px-4 py-2"
-				>Se parte</a
+				>Sé parte</a
 			>
 		</div>
 	</div>

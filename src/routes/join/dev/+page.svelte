@@ -1,3 +1,8 @@
+<script lang="ts">
+	const formID = 'app3W2yfnucBj7Ktg/shrTaHJaPvu9Jj6In';
+	export let devFormURL = `https://airtable.com/embed/${formID}?prefill_Tipo=🧑‍💻+Equipo+de+Desarrollo`;
+</script>
+
 <a href="/join" class="underline">Volver atrás</a>
 
 <div class="prose prose-headings:font-display my-8">
@@ -37,7 +42,7 @@
 			href="https://docs.github.com/es/get-started/onboarding/getting-started-with-your-github-account"
 			>esta guía de GitHub</a
 		>
-		si es que no tienes cuenta o configurado Git. Cualquier duda puedes preguntar por Telegram y Discord
+		si no tienes cuenta o configurado Git. Cualquier duda puedes preguntar por Telegram y Discord
 		(links en la <a href="/">página principal</a>).
 	</p>
 
@@ -102,7 +107,7 @@
 	<iframe
 		title="Formulario de postulación"
 		class="airtable-embed"
-		src="https://airtable.com/embed/appSIzGdt5w6Jmuj1/shrO4vpotfffkgivl?prefill_Tipo=🧑‍💻+Equipo+de+Desarrollo"
+		src="{devFormURL}"
 		frameborder="0"
 		width="100%"
 		height="533"
