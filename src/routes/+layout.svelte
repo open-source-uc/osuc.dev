@@ -5,8 +5,8 @@
 
 	import './styles.css';
 
-	import openGraphImgUrl from '$assets/og/small.png';
-	import twitterImgUrl from '$assets/og/base.png';
+	import openGraphImgUrl from '$assets/og/og.image.jpg';
+	import twitterImgUrl from '$assets/og/twitter.image.jpg';
 
 	const meta = derived(
 		page,
