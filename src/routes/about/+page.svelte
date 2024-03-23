@@ -34,7 +34,7 @@
 			otros que sean de interés.
 		</p>
 		<p>
-			Puedes ver los proyectos en <a href="https://github,com/open-source-uc">nuestro GitHub</a> y
+			Puedes ver los proyectos en <a href="https://github.com/open-source-uc">nuestro GitHub</a> y
 			se participa cada semestre en la
 			<a href="/join">página de como unirse</a>.
 		</p>
