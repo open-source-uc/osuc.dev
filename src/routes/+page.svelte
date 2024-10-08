@@ -12,17 +12,20 @@
 
 <svelte:head>
 	<title>Open Source UC</title>
-	<meta name="description" content="Somos una comunidad de estudiantes de la UC Chile apasionada por crear e impulsar proyectos bacanes de código abierto" />
+	<meta
+		name="description"
+		content="Somos una comunidad de estudiantes de la UC Chile apasionada por crear e impulsar proyectos bacanes de código abierto"
+	/>
 </svelte:head>
 
-<div
+<!-- <div
 	class="px-4 py-2 flex flex-col sm:flex-row justify-center items-center sm:gap-4 bg-primary-100"
 >
 	<div class="text-center">Abrimos las postulaciones al equipo OSUC</div>
 	<a href="https://osuc.dev/join" class="bg-primary-500 py-1 px-4 rounded text-primary-50"
 		>Únete</a
 	>
-</div>
+</div> -->
 
 <section class="hero z-10 overflow-hidden relative text-base-100 border-b-2 border-base-900">
 	<div class="container px-4 py-12 sm:py-32 text-center">

@@ -42,8 +42,8 @@
 			href="https://docs.github.com/es/get-started/onboarding/getting-started-with-your-github-account"
 			>esta guía de GitHub</a
 		>
-		si no tienes cuenta o configurado Git. Cualquier duda puedes preguntar por Telegram y Discord
-		(links en la <a href="/">página principal</a>).
+		si no tienes cuenta o configurado Git. Cualquier duda puedes preguntar por Telegram y Discord (links
+		en la <a href="/">página principal</a>).
 	</p>
 
 	<h2>¿Qué es lo que harás?</h2>
@@ -104,7 +104,7 @@
 	</ol>
 
 	<h2>Form de postulación</h2>
-	<iframe
+	<!-- <iframe
 		title="Formulario de postulación"
 		class="airtable-embed"
 		src="{devFormURL}"
@@ -112,5 +112,5 @@
 		width="100%"
 		height="533"
 		style="background: transparent; border: 1px solid #ccc;"
-	/>
+	/> -->
 </div>
