@@ -1,3 +1,11 @@
+<script>
+	let checked = false;
+
+	$: if (checked) {
+		window.location.href = '/join/form';
+	}
+</script>
+
 <div class="prose my-8 prose-headings:font-display">
 	<h1>Únete a la comunidad</h1>
 
@@ -15,16 +23,8 @@
 	<p>
 		Únete como desarrollador en uno de los proyectos del semestre, dedicándole al menos 4 horas de
 		trabajo a la semana y reuniéndote con tu equipo cada semana. Recibirás ayuda y feedback durante
-		todo el proceso para que puedas aprender como desarrollar software en equipo.
+		todo el proceso para que puedas aprender cómo desarrollar software en equipo.
 	</p>
-
-	<div class="not-prose">
-		<a
-			href="/join/dev"
-			class="hover:underline border px-4 py-1 w-full block rounded bg-primary-500 text-primary-50"
-			>Sé parte</a
-		>
-	</div>
 
 	<h2>Equipo Interno</h2>
 	<p>
@@ -35,13 +35,11 @@
 	<ul>
 		<li>Proyectos: organiza los equipos de desarrollo y mantiene proyectos</li>
 		<li>Marketing y Diseño: ve la difusión y apoya en el diseño de los proyectos</li>
-		<li>Comunidad y Educación: crea espacios recreativos y educacionales</li>
 	</ul>
-	<div class="not-prose">
-		<a
-			href="/join/internal"
-			class="hover:underline border px-4 py-1 w-full block rounded bg-primary-500 text-primary-50"
-			>Sé parte</a
-		>
+	<div class="not-prose flex items-center gap-2">
+		<input type="checkbox" bind:checked class="w-5 h-5" id="joinCheckbox" />
+		<label for="joinCheckbox" class="text-primary-500 cursor-pointer">
+			Leído esto, es momento de inscribirse.
+		</label>
 	</div>
 </div>
