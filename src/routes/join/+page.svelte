@@ -39,7 +39,7 @@
 	<div class="not-prose flex items-center gap-2">
 		<input type="checkbox" bind:checked class="w-5 h-5" id="joinCheckbox" />
 		<label for="joinCheckbox" class="text-primary-500 cursor-pointer">
-			Leído esto, es momento de inscribirse.
+			Leído esto, marca la casilla para inscribirte.
 		</label>
 	</div>
 </div>
