@@ -30,19 +30,25 @@ function cleanupPinnedRepos(data: PinnedReposResponse) {
 }
 
 export async function load(event) {
-	const data = await github.graphql<PinnedReposResponse>(pinnedReposQuery);
+	try {
+		const data = await github.graphql<PinnedReposResponse>(pinnedReposQuery);
 
-	// Cache using Cloudflare's cache Headers API
-	// https://developers.cloudflare.com/workers/runtime-apis/cache/#headers
-	// Usage limits: 5000 points per hour -> aprox 12 requests second
-	// https://docs.github.com/en/graphql/overview/resource-limitations#returning-a-calls-rate-limit-status
-	event.setHeaders({
-		'Cache-Control': 'public, max-age=15, stale-while-revalidate=3'
-	});
+		// Cache using Cloudflare's cache Headers API
+		// https://developers.cloudflare.com/workers/runtime-apis/cache/#headers
+		// Usage limits: 5000 points per hour -> aprox 12 requests second
+		// https://docs.github.com/en/graphql/overview/resource-limitations#returning-a-calls-rate-limit-status
+		event.setHeaders({
+			'Cache-Control': 'public, max-age=15, stale-while-revalidate=3'
+		});
 
-	return {
-		pinnedRepos: cleanupPinnedRepos(data)
-	};
+		return {
+			pinnedRepos: cleanupPinnedRepos(data)
+		};
+	} catch (error) {
+		return {
+			pinnedRepos: []
+		}
+	}
 }
 
 type TopicEntry = {
