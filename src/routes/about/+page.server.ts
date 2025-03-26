@@ -1,23 +1,28 @@
-import { github } from '$lib/server/github';
-
-
-const ORG = "open-source-uc";
-const TEAM_SLUG = "coordinadores";
 interface LeaderProps {
     name: string;
     description: string;
     githubUser: string | null;
 }
+
 const leadersAndYear: { year: string, leaders: LeaderProps[] }[] = [
-
-
-
     {
         year: '2024-2',
         leaders: [
-            { name: 'Vicente Muñoz', description: 'General', githubUser: "utmite" },
-            { name: 'Fabián Mendoza', description: 'Externo', githubUser: "FabianMF1" },
-            { name: 'Vicencio', description: 'Interno', githubUser: "vicenciomf2" }
+            {
+                name: 'Vicente Muñoz',
+                description: 'General',
+                githubUser: "utmite"
+            },
+            {
+                name: 'Fabián Mendoza',
+                description: 'Externo',
+                githubUser: "FabianMF1"
+            },
+            {
+                name: 'Vicencio',
+                description: 'Interno',
+                githubUser: "vicenciomf2"
+            }
         ]
     },
     {
@@ -127,37 +132,18 @@ const leadersAndYear: { year: string, leaders: LeaderProps[] }[] = [
 ]
 
 export async function load({ setHeaders }) {
+    const leadersWithGithubData = leadersAndYear.map((yearGroup) => ({
+        ...yearGroup,
+        leaders: yearGroup.leaders.map((leader) => {
+            const avatarUrl = leader.githubUser ? `https://github.com/${leader.githubUser}.png` : null;
+            return {
+                ...leader,
+                avatarUrl,
+                name: leader.githubUser ? leader.githubUser : leader.name // Si no hay githubUser, usar el nombre del líder
+            };
+        })
+    }));
 
-    // Obtener detalles de cada líder de GitHub
-    const leadersWithGithubData = await Promise.all(
-        leadersAndYear.map(async (yearGroup) => ({
-            ...yearGroup,
-            leaders: await Promise.all(
-                yearGroup.leaders.map(async (leader) => {
-                    if (leader.githubUser) {
-                        try {
-                            // Solicitar la información del usuario
-                            const { data: userDetails } = await github.request("GET /users/{username}", {
-                                username: leader.githubUser
-                            });
-
-                            return {
-                                ...leader,
-                                avatarUrl: userDetails.avatar_url, // Obtener la URL del avatar
-                                name: userDetails.name || leader.name // Si no tiene nombre, usa el nombre del líder
-                            };
-                        } catch (error) {
-                            console.error(`Error al obtener datos de GitHub para ${leader.githubUser}: `, error);
-                            return { ...leader, avatarUrl: null }; // Si hay error, no tiene avatar
-                        }
-                    }
-                    return leader; // Si no hay githubUser, devolvemos el líder tal como está
-                })
-            )
-        }))
-    );
-
-    // Cache usando Cloudflare
     setHeaders({
         "Cache-Control": "public, max-age=86400, stale-while-revalidate=3"
     });

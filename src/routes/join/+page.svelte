@@ -16,9 +16,11 @@
 	</p>
 	<p>
 		Para esto, necesitamos personas motivadas que nos ayuden. Tenemos dos formas en las que te
-		puedes sumar:
+		puedes sumar, siempre respetando nuestro Código de Conducta:
 	</p>
-
+	<a href="/conduct" class="rounded px-4 py-2 bg-base-600 hover:underline no-underline text-base-50"
+		>🫂 Código de Conducta</a
+	>
 	<h2>Equipos de Desarrollo</h2>
 	<p>
 		Únete como desarrollador en uno de los proyectos del semestre, dedicándole tiempo de trabajo a
@@ -37,10 +39,10 @@
 		<li>Marketing y Diseño: se encarga de la difusión y apoya en el diseño de los proyectos.</li>
 	</ul>
 
-	<div class="not-prose flex items-center gap-2">
+	<div class="not-prose flex items-center gap-2 mt-4">
 		<input type="checkbox" bind:checked class="w-5 h-5" id="joinCheckbox" />
 		<label for="joinCheckbox" class="text-primary-500 cursor-pointer">
-			Leído esto, marca la casilla para inscribirte.
+			He leído y acepto el Código de Conducta. Marcar la casilla para inscribirte.
 		</label>
 	</div>
 </div>
