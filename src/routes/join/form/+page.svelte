@@ -20,6 +20,7 @@
 			frameborder="0"
 			allowfullscreen
 			title="Formulario de inscripción"
+			loading="eager"
 			on:load={handleLoad}
 		/>
 	</div>

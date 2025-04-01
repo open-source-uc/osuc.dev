@@ -20,6 +20,7 @@
 			title="Formulario de contacto"
 			allowfullscreen
 			on:load={handleLoad}
+			loading="eager"
 		/>
 		<noscript>
 			<div
