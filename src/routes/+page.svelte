@@ -14,7 +14,7 @@
 	<title>Open Source UC</title>
 	<meta
 		name="description"
-		content="Somos una comunidad de estudiantes de la UC Chile apasionada por crear e impulsar proyectos bacanes de código abierto"
+		content="Somos una comunidad de estudiantes de la UC Chile apasionada por crear e impulsar proyectos bacanes de código abierto"
 	/>
 </svelte:head>
 
@@ -34,7 +34,7 @@
 			Somos una comunidad de estudiantes de la <a
 				href="https://uc.cl"
 				class="underline underline-offset-2">UC Chile</a
-			> apasionada por crear e impulsar proyectos bacanes de código abierto
+			> apasionada por crear e impulsar proyectos bacanes de código abierto
 		</p>
 		<div
 			class="flex flex-col sm:flex-row flex-wrap gap-1 sm:gap-2 justify-center max-w-md sm:max-w-none mx-auto"
@@ -49,8 +49,6 @@
 	</div>
 </section>
 
-<section />
-
 <section id="projects" class="py-6 px-2 [scroll-margin-top:-3rem]">
 	<h2 class="text-center font-display my-8 text-3xl sm:text-5xl font-semibold text-base-900">
 		<a href="#projects">Proyectos destacados</a>
@@ -61,7 +59,7 @@
 		{/each}
 	</ul>
 	<div
-		class="mx-auto grid w-fit auto-rows-auto grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3 pt-6"
+		class="mx-auto grid w-full auto-rows-auto grid-cols-1 gap-8 p-4 lg:max-w-screen-lg sm:grid-cols-2 lg:grid-cols-3 lg:px-6"
 	>
 		<a
 			href="https://github.com/issues?q=is:open+is:issue+archived:false+user:open-source-uc"
@@ -106,6 +104,36 @@
 	<div
 		class="container py-8 mx-auto grid max-w-xl grid-flow-row grid-cols-1 gap-4 lg:max-w-screen-lg lg:grid-cols-2"
 	>
+		<div
+			class="grid h-min gap-4 overflow-clip rounded-md lg:col-span-2 lg:grid-cols-2"
+			style="background: linear-gradient(135deg, #0d47a1, #1976d2, #42a5f5);"
+		>
+			<!-- Contenedor del texto (en móvil aparece primero, en desktop a la derecha) -->
+			<div class="order-1 flex flex-col justify-center px-6 py-6 lg:order-2">
+				<h2 class="mb-4 font-display text-4xl font-semibold text-white">
+					Únete a nuestros eventos
+				</h2>
+				<div class="text-blue-50">
+					Únete a nuestros talleres, charlas y eventos, donde podrás desarrollar tus ideas mientras
+					conoces a personas apasionadas con intereses similares. Amplía tu red profesional y
+					personal en un ambiente inspirador y colaborativo.
+				</div>
+			</div>
+
+			<!-- Contenedor del calendario (en móvil aparece segundo, en desktop a la izquierda) -->
+			<div
+				class="order-2 px-6 py-6 lg:order-1 bg-opacity-10 bg-white backdrop-blur-sm rounded-md m-4"
+			>
+				<iframe
+					src="https://lu.ma/embed/calendar/cal-Jf0O0m07SCYrmXs/events?lt=light"
+					frameborder="0"
+					class="w-full rounded-md border bg-white shadow-lg"
+					height="350"
+					aria-hidden="false"
+					title="Calendario de eventos"
+				/>
+			</div>
+		</div>
 		<div class="flex flex-col overflow-clip bg-base-50 border border-base-300 rounded-md">
 			<img src={moreImgSrc} alt="" class="h-36 w-full object-cover object-[50%_30%] rounded-b-md" />
 			<div class="flex flex-grow flex-col p-4">

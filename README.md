@@ -3,6 +3,7 @@
 Sitio web oficial de Open Source UC
 
 ## Tech Stack
+
 - Vite
 - SvelteKit
 - TailwindCSS

@@ -47,7 +47,7 @@ export async function load(event) {
 	} catch (error) {
 		return {
 			pinnedRepos: []
-		}
+		};
 	}
 }
 
