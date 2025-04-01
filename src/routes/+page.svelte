@@ -131,6 +131,7 @@
 					height="350"
 					aria-hidden="false"
 					title="Calendario de eventos"
+					loading="lazy"
 				/>
 			</div>
 		</div>
