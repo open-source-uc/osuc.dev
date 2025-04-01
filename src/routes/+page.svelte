@@ -109,10 +109,12 @@
 			style="background: linear-gradient(135deg, #0d47a1, #1976d2, #42a5f5);"
 		>
 			<!-- Contenedor del texto (en móvil aparece primero, en desktop a la derecha) -->
-			<div class="order-1 flex flex-col justify-center px-6 py-6 lg:order-2">
-				<h2 class="mb-4 font-display text-4xl font-semibold text-white">
-					Únete a nuestros eventos
-				</h2>
+			<div class="order-1 flex flex-col justify-start px-6 pt-20 lg:order-2">
+				<div>
+					<h2 class="mb-4 font-display text-4xl font-semibold text-white">
+						Únete a nuestros eventos
+					</h2>
+				</div>
 				<div class="text-blue-50">
 					Únete a nuestros talleres, charlas y eventos, donde podrás desarrollar tus ideas mientras
 					conoces a personas apasionadas con intereses similares. Amplía tu red profesional y
@@ -121,9 +123,7 @@
 			</div>
 
 			<!-- Contenedor del calendario (en móvil aparece segundo, en desktop a la izquierda) -->
-			<div
-				class="order-2 px-6 py-6 lg:order-1 bg-opacity-10 bg-white backdrop-blur-sm rounded-md m-4"
-			>
+			<div class="order-2 p-6 lg:order-1 bg-opacity-10 rounded-md">
 				<iframe
 					src="https://lu.ma/embed/calendar/cal-Jf0O0m07SCYrmXs/events?lt=light"
 					frameborder="0"
