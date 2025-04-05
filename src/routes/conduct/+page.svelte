@@ -4,7 +4,7 @@
 			<p class="font-bold">⚠️ TLDR:</p>
 			<p>
 				Si eres víctima o presenciaste un incidente dentro de nuestra comunidad, puedes denunciar y
-				conseguir apoyo contactando al coordinador general del semestre.
+				conseguir apoyo contactando a nuestro Coordinador de Comunidad e Inclusión (ignacio.palma@uc.cl) o Coordinador General (vml@uc.cl)
 			</p>
 		</div>
 
@@ -113,7 +113,7 @@
 			<h3 class="text-2xl font-semibold mb-4">Aplicación</h3>
 			<p>
 				Instancias de comportamiento abusivo, acosador o inaceptable de otro modo podrán ser
-				reportadas al coordinador general del semestre. Todas las quejas serán evaluadas e
+				reportadas al Coordinador de Comunidad e Inclusión (ignacio.palma@uc.cl) o Coordinador General (vml@uc.cl). Todas las quejas serán evaluadas e
 				investigadas de una manera puntual y justa.
 			</p>
 			<p class="mt-4">
