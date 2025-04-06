@@ -18,7 +18,7 @@
 					'Open Source UC es una iniciativa de estudiantes de la PUC Chile que busca promover el desarrollo de software de código abierto.',
 				openGraphImgUrl: meta.openGraphImgUrl || openGraphImgUrl,
 				twitterImgUrl: meta.twitterImgUrl || twitterImgUrl
-			} as PageMetadata)
+			}) as PageMetadata
 	);
 </script>
 
@@ -72,7 +72,7 @@
 	</div>
 </header>
 
-<div class="flex-grow bg-base-50">
+<div class="grow bg-base-50">
 	<slot />
 </div>
 

@@ -22,7 +22,7 @@
 			title="Formulario de inscripción"
 			loading="eager"
 			on:load={handleLoad}
-		/>
+		></iframe>
 	</div>
 
 	<noscript>

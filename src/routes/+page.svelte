@@ -1,9 +1,11 @@
 <script lang="ts">
 	import LandingProject from './LandingProject.svelte';
 
-	// Todo: ver porque TS alega por estos imports
+	// @ts-expect-error especificación de import de imagen
 	import colaborateImgSrc from '$assets/landing/colaborate.jpg?h=512&format=webp';
+	// @ts-expect-error especificación de import de imagen
 	import joinImgSrc from '$assets/landing/join.jpg?h=1024&format=webp';
+	// @ts-expect-error especificación de import de imagen
 	import moreImgSrc from '$assets/landing/more.jpg?h=512&format=webp';
 
 	export let data;
@@ -22,7 +24,7 @@
 	class="px-4 py-2 flex flex-col sm:flex-row justify-center items-center sm:gap-4 bg-primary-100"
 >
 	<div class="text-center">Abrimos las postulaciones al equipo OSUC</div>
-	<a href="https://osuc.dev/join" class="bg-primary-500 py-1 px-4 rounded text-primary-50"
+	<a href="https://osuc.dev/join" class="bg-primary-500 py-1 px-4 rounded-sm text-primary-50"
 		>Únete</a
 	>
 </div> -->
@@ -39,10 +41,10 @@
 		<div
 			class="flex flex-col sm:flex-row flex-wrap gap-1 sm:gap-2 justify-center max-w-md sm:max-w-none mx-auto"
 		>
-			<a href="/about" class="rounded px-4 py-2 bg-base-600 hover:underline text-base-50"
+			<a href="/about" class="rounded-sm px-4 py-2 bg-base-600 hover:underline text-base-50"
 				>Más sobre nosotros</a
 			>
-			<a href="/join" class="rounded bg-primary-600 hover:underline text-primary-50 px-4 py-2"
+			<a href="/join" class="rounded-sm bg-primary-600 hover:underline text-primary-50 px-4 py-2"
 				>Sé parte</a
 			>
 		</div>
@@ -59,11 +61,11 @@
 		{/each}
 	</ul>
 	<div
-		class="mx-auto grid w-full auto-rows-auto grid-cols-1 gap-8 p-4 lg:max-w-screen-lg sm:grid-cols-2 lg:grid-cols-3 lg:px-6"
+		class="mx-auto grid w-full auto-rows-auto grid-cols-1 gap-8 p-4 lg:max-w-(--breakpoint-lg) sm:grid-cols-2 lg:grid-cols-3 lg:px-6"
 	>
 		<a
 			href="https://github.com/issues?q=is:open+is:issue+archived:false+user:open-source-uc"
-			class="flex items-center justify-center gap-2 bg-base-200 border px-4 py-2 rounded hover:underline"
+			class="flex items-center justify-center gap-2 bg-base-200 border px-4 py-2 rounded-sm hover:underline"
 		>
 			<svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 16 16"
 				><path fill="currentColor" d="M8 9.5a1.5 1.5 0 1 0 0-3a1.5 1.5 0 0 0 0 3Z" /><path
@@ -75,7 +77,7 @@
 		>
 		<a
 			href="https://github.com/open-source-uc"
-			class="flex items-center justify-center bg-base-900 text-base-100 gap-2 px-4 py-2 rounded hover:underline"
+			class="flex items-center justify-center bg-base-900 text-base-100 gap-2 px-4 py-2 rounded-sm hover:underline"
 		>
 			<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16"
 				><path
@@ -87,7 +89,7 @@
 		</a>
 		<a
 			href="https://t.me/+zQdotSmFEIRkMzcx"
-			class="flex items-center justify-center bg-primary-600 text-base-100 gap-2 px-4 py-2 rounded hover:underline"
+			class="flex items-center justify-center bg-primary-600 text-base-100 gap-2 px-4 py-2 rounded-sm hover:underline"
 		>
 			<svg xmlns="http://www.w3.org/2000/svg" class="h-6" viewBox="0 0 24 24"
 				><path
@@ -102,7 +104,7 @@
 
 <section class="bg-base-100">
 	<div
-		class="container py-8 mx-auto grid max-w-xl grid-flow-row grid-cols-1 gap-4 lg:max-w-screen-lg lg:grid-cols-2"
+		class="container py-8 mx-auto grid max-w-xl grid-flow-row grid-cols-1 gap-4 lg:max-w-(--breakpoint-lg) lg:grid-cols-2"
 	>
 		<div
 			class="grid h-min gap-4 overflow-clip rounded-md lg:col-span-2 lg:grid-cols-2"
@@ -132,13 +134,13 @@
 					aria-hidden="false"
 					title="Calendario de eventos"
 					loading="lazy"
-				/>
+				></iframe>
 			</div>
 		</div>
 		<div class="flex flex-col overflow-clip bg-base-50 border border-base-300 rounded-md">
 			<img src={moreImgSrc} alt="" class="h-36 w-full object-cover object-[50%_30%] rounded-b-md" />
-			<div class="flex flex-grow flex-col p-4">
-				<div class="flex-grow">
+			<div class="flex grow flex-col p-4">
+				<div class="grow">
 					<h2 class="text-2xl font-bold text-base-800">Conoce más</h2>
 					<div class="text-base-700 leading-tight">
 						Entérate de todo lo que es lo que estamos haciendo, como estamos impulsando la comunidad
@@ -148,7 +150,7 @@
 				<div class="mt-8 flex flex-col sm:flex-row gap-2">
 					<a
 						href="https://www.instagram.com/opensource_euc/"
-						class="flex w-full items-center gap-2 justify-center rounded bg-base-100 py-2 px-4 text-base-900 hover:underline lg:w-max"
+						class="flex w-full items-center gap-2 justify-center rounded-sm bg-base-100 py-2 px-4 text-base-900 hover:underline lg:w-max"
 					>
 						<svg xmlns="http://www.w3.org/2000/svg" class="h-6" viewBox="0 0 24 24"
 							><path
@@ -160,7 +162,7 @@
 					</a>
 					<a
 						href="/about"
-						class="flex w-full items-center justify-center rounded bg-base-100 py-2 px-4 text-base-900 hover:underline lg:w-max"
+						class="flex w-full items-center justify-center rounded-sm bg-base-100 py-2 px-4 text-base-900 hover:underline lg:w-max"
 						>Más sobre nosotros</a
 					>
 				</div>
@@ -172,7 +174,7 @@
 				alt=""
 				class="h-36 w-full object-cover object-[50%_30%] brightness-125 rounded-b-md"
 			/>
-			<div class="flex flex-grow flex-col p-4">
+			<div class="flex grow flex-col p-4">
 				<h2 class="text-2xl font-bold text-base-800">Colabora con nosotros</h2>
 				<div class="text-base-700 leading-tight">
 					Desde empresas hasta otras iniciativas de otras universidades, buscamos colaborar para
@@ -191,14 +193,14 @@
 			class="grid h-min gap-4 overflow-clip bg-primary-600 lg:col-span-2 lg:grid-cols-2 rounded-md"
 		>
 			<div class="relative max-h-64 lg:-mr-4 lg:max-h-96">
-				<div class="absolute inset-0 bg-primary-600 opacity-20 mix-blend-overlay" />
+				<div class="absolute inset-0 bg-primary-600 opacity-20 mix-blend-overlay"></div>
 				<div
-					class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-primary-600 lg:bg-gradient-to-r"
-				/>
+					class="absolute inset-0 bg-linear-to-b from-transparent via-transparent to-primary-600 lg:bg-linear-to-r"
+				></div>
 				<img src={joinImgSrc} alt="" class="h-full max-h-96 w-full object-cover object-[50%_35%]" />
 			</div>
 			<div class="flex flex-col px-6 py-6">
-				<div class="flex-grow">
+				<div class="grow">
 					<h2 class="lg:mt-4 mb-4 font-display text-4xl font-semibold text-primary-50">Únete</h2>
 					<div class="text-primary-100">
 						Participa en la creación y colaboración en proyectos de distinto ámbito y alcance. Únete
@@ -210,7 +212,7 @@
 					<div class="text-primary-50 flex flex-wrap gap-2">
 						<a
 							href="https://t.me/+zQdotSmFEIRkMzcx"
-							class="flex gap-2 border justify-center flex-grow border-primary-50 rounded py-2 px-2 hover:underline"
+							class="flex gap-2 border justify-center grow border-primary-50 rounded-sm py-2 px-2 hover:underline"
 						>
 							<svg xmlns="http://www.w3.org/2000/svg" class="h-6" viewBox="0 0 24 24"
 								><path
@@ -222,7 +224,7 @@
 						</a>
 						<a
 							href="https://discord.gg/jRdQCGn6yS"
-							class="flex gap-2 border justify-center flex-grow border-primary-50 rounded py-2 px-2 hover:underline"
+							class="flex gap-2 border justify-center grow border-primary-50 rounded-sm py-2 px-2 hover:underline"
 						>
 							<svg xmlns="http://www.w3.org/2000/svg" class="h-6" viewBox="0 0 24 24"
 								><path
@@ -235,7 +237,7 @@
 					</div>
 					<a
 						href="/join"
-						class="flex py-2 px-2 text-center min-h-fit rounded items-center justify-center bg-primary-50 text-primary-700 hover:underline"
+						class="flex py-2 px-2 text-center min-h-fit rounded-sm items-center justify-center bg-primary-50 text-primary-700 hover:underline"
 						>Participa en nuestra comunidad</a
 					>
 				</div>
@@ -255,14 +257,19 @@
 		z-index: -1;
 		transform: translate(-50%, -50%) rotate(15deg);
 		background-position: center center;
-		background: url('$assets/svg/git-branches.svg?') 0 0 repeat, theme('colors.base.900');
+		background:
+			url('$assets/svg/git-branches.svg?') 0 0 repeat,
+			var(--color-base-900);
 		margin: 0;
 	}
 	#projects {
-		background-color: theme('colors.base.50');
-		background-image: linear-gradient(theme('colors.base.100') 1px, transparent 1px),
-			linear-gradient(90deg, theme('colors.base.100') 1px, transparent 1px);
-		background-size: 15px 15px, 15px 15px;
+		background-color: var(--color-base-50);
+		background-image:
+			linear-gradient(var(--color-base-100) 1px, transparent 1px),
+			linear-gradient(90deg, var(--color-base-100) 1px, transparent 1px);
+		background-size:
+			15px 15px,
+			15px 15px;
 		background-position: center center;
 	}
 </style>

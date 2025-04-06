@@ -21,7 +21,7 @@
 			allowfullscreen
 			on:load={handleLoad}
 			loading="eager"
-		/>
+		></iframe>
 		<noscript>
 			<div
 				class="absolute inset-0 flex items-center justify-center bg-gray-50 rounded-lg border border-gray-200 p-4 text-center"

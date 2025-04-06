@@ -18,7 +18,9 @@
 		Para esto, necesitamos personas motivadas que nos ayuden. Tenemos dos formas en las que te
 		puedes sumar, siempre respetando nuestro Código de Conducta:
 	</p>
-	<a href="/conduct" class="rounded px-4 py-2 bg-base-600 hover:underline no-underline text-base-50"
+	<a
+		href="/conduct"
+		class="rounded-sm px-4 py-2 bg-base-600 hover:underline no-underline text-base-50"
 		>🫂 Código de Conducta</a
 	>
 	<h2>Equipos de Desarrollo</h2>
