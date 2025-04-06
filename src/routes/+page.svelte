@@ -32,27 +32,33 @@
 <section class="hero z-10 overflow-hidden relative text-base-100 border-b-2 border-base-900">
 	<div class="container px-4 py-12 sm:py-32 text-center">
 		<h1 class="font-display font-bold text-4xl sm:text-6xl mb-4">Open Source UC</h1>
-		<p class="text-base-300 font-medium text-lg sm:text-2xl max-w-lg mx-auto mb-6">
+		<p class="text-base-300 font-medium text-lg sm:text-2xl max-w-lg mx-auto mb-6 text-balance">
 			Somos una comunidad de estudiantes de la <a
 				href="https://uc.cl"
 				class="underline underline-offset-2">UC Chile</a
 			> apasionada por crear e impulsar proyectos bacanes de código abierto
 		</p>
-		<div
-			class="flex flex-col sm:flex-row flex-wrap gap-1 sm:gap-2 justify-center max-w-md sm:max-w-none mx-auto"
-		>
+		<div class="flex flex-row gap-2 sm:gap-3 justify-center max-w-md sm:max-w-none mx-auto">
 			<a href="/about" class="rounded-sm px-4 py-2 bg-base-600 hover:underline text-base-50"
-				>Más sobre nosotros</a
+				>Nosotros</a
 			>
 			<a href="/join" class="rounded-sm bg-primary-600 hover:underline text-primary-50 px-4 py-2"
 				>Sé parte</a
 			>
+			<a
+				href="https://t.me/+zQdotSmFEIRkMzcx"
+				class="rounded-sm px-4 py-2 bg-base-600 hover:underline text-base-50"
+			>
+				Telegram
+			</a>
 		</div>
 	</div>
 </section>
 
-<section id="projects" class="py-6 px-2 [scroll-margin-top:-3rem]">
-	<h2 class="text-center font-display my-8 text-3xl sm:text-5xl font-semibold text-base-900">
+<section id="projects" class="py-6 [scroll-margin-top:-3rem] container max-w-lg">
+	<h2
+		class="text-center font-display my-6 lg:my-8 text-3xl sm:text-5xl font-semibold text-base-900"
+	>
 		<a href="#projects">Proyectos destacados</a>
 	</h2>
 	<ul class="mx-auto grid w-fit auto-rows-auto grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
@@ -60,9 +66,7 @@
 			<LandingProject {repo} />
 		{/each}
 	</ul>
-	<div
-		class="mx-auto grid w-full auto-rows-auto grid-cols-1 gap-8 p-4 lg:max-w-(--breakpoint-lg) sm:grid-cols-2 lg:grid-cols-3 lg:px-6"
-	>
+	<div class="w-full flex flex-row gap-2 p-4 lg:p-6 justify-center">
 		<a
 			href="https://github.com/issues?q=is:open+is:issue+archived:false+user:open-source-uc"
 			class="flex items-center justify-center gap-2 bg-base-200 border px-4 py-2 rounded-sm hover:underline"
@@ -73,8 +77,11 @@
 					d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0ZM1.5 8a6.5 6.5 0 1 0 13 0a6.5 6.5 0 0 0-13 0Z"
 				/></svg
 			>
-			Ver todas las issues</a
-		>
+			<span>
+				<span class="hidden sm:inline">Ver todas las</span>
+				Issues
+			</span>
+		</a>
 		<a
 			href="https://github.com/open-source-uc"
 			class="flex items-center justify-center bg-base-900 text-base-100 gap-2 px-4 py-2 rounded-sm hover:underline"
@@ -85,19 +92,10 @@
 					d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38c0-.27.01-1.13.01-2.2c0-.75-.25-1.23-.54-1.48c1.78-.2 3.65-.88 3.65-3.95c0-.88-.31-1.59-.82-2.15c.08-.2.36-1.02-.08-2.12c0 0-.67-.22-2.2.82c-.64-.18-1.32-.27-2-.27c-.68 0-1.36.09-2 .27c-1.53-1.03-2.2-.82-2.2-.82c-.44 1.1-.16 1.92-.08 2.12c-.51.56-.82 1.28-.82 2.15c0 3.06 1.86 3.75 3.64 3.95c-.23.2-.44.55-.51 1.07c-.46.21-1.61.55-2.33-.66c-.15-.24-.6-.83-1.23-.82c-.67.01-.27.38.01.53c.34.19.73.9.82 1.13c.16.45.68 1.31 2.69.94c0 .67.01 1.3.01 1.49c0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"
 				/></svg
 			>
-			Ir a GitHub
-		</a>
-		<a
-			href="https://t.me/+zQdotSmFEIRkMzcx"
-			class="flex items-center justify-center bg-primary-600 text-base-100 gap-2 px-4 py-2 rounded-sm hover:underline"
-		>
-			<svg xmlns="http://www.w3.org/2000/svg" class="h-6" viewBox="0 0 24 24"
-				><path
-					fill="currentColor"
-					d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10s10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19c-.14.75-.42 1-.68 1.03c-.58.05-1.02-.38-1.58-.75c-.88-.58-1.38-.94-2.23-1.5c-.99-.65-.35-1.01.22-1.59c.15-.15 2.71-2.48 2.76-2.69a.2.2 0 0 0-.05-.18c-.06-.05-.14-.03-.21-.02c-.09.02-1.49.95-4.22 2.79c-.4.27-.76.41-1.08.4c-.36-.01-1.04-.2-1.55-.37c-.63-.2-1.12-.31-1.08-.66c.02-.18.27-.36.74-.55c2.92-1.27 4.86-2.11 5.83-2.51c2.78-1.16 3.35-1.36 3.73-1.36c.08 0 .27.02.39.12c.1.08.13.19.14.27c-.01.06.01.24 0 .38z"
-				/></svg
-			>
-			Grupo de Telegram
+			<span>
+				<span class="hidden sm:inline">Ir a</span>
+				GitHub
+			</span>
 		</a>
 	</div>
 </section>
@@ -106,18 +104,18 @@
 	<div
 		class="container py-8 mx-auto grid max-w-xl grid-flow-row grid-cols-1 gap-4 lg:max-w-(--breakpoint-lg) lg:grid-cols-2"
 	>
+		<!-- Calendario -->
+
+		<!--  class="flex flex-col overflow-clip bg-base-50 border border-base-300 rounded-md" -->
 		<div
-			class="grid h-min gap-4 overflow-clip rounded-md lg:col-span-2 lg:grid-cols-2"
-			style="background: linear-gradient(135deg, #0d47a1, #1976d2, #42a5f5);"
+			class="grid h-min gap-4 overflow-clip bg-base-50 border border-base-300 rounded-md lg:col-span-2 lg:grid-cols-2"
 		>
 			<!-- Contenedor del texto (en móvil aparece primero, en desktop a la derecha) -->
-			<div class="order-1 flex flex-col justify-start px-6 pt-20 lg:order-2">
+			<div class="flex flex-col justify-start py-6 px-6">
 				<div>
-					<h2 class="mb-4 font-display text-4xl font-semibold text-white">
-						Únete a nuestros eventos
-					</h2>
+					<h2 class="lg:mt-4 mb-4 font-display text-4xl font-semibold">Participa</h2>
 				</div>
-				<div class="text-blue-50">
+				<div>
 					Únete a nuestros talleres, charlas y eventos, donde podrás desarrollar tus ideas mientras
 					conoces a personas apasionadas con intereses similares. Amplía tu red profesional y
 					personal en un ambiente inspirador y colaborativo.
@@ -125,70 +123,17 @@
 			</div>
 
 			<!-- Contenedor del calendario (en móvil aparece segundo, en desktop a la izquierda) -->
-			<div class="order-2 p-6 lg:order-1 bg-opacity-10 rounded-md">
+			<div class="w-full h-full min-h-76 relative">
 				<iframe
 					src="https://lu.ma/embed/calendar/cal-Jf0O0m07SCYrmXs/events?lt=light"
 					frameborder="0"
-					class="w-full rounded-md border bg-white shadow-lg"
-					height="350"
 					aria-hidden="false"
 					title="Calendario de eventos"
-					loading="lazy"
+					class="inset-0 absolute origin-top-left scale-[calc(100%*8/10)] size-[calc(100%*10/8)]"
 				></iframe>
 			</div>
 		</div>
-		<div class="flex flex-col overflow-clip bg-base-50 border border-base-300 rounded-md">
-			<img src={moreImgSrc} alt="" class="h-36 w-full object-cover object-[50%_30%] rounded-b-md" />
-			<div class="flex grow flex-col p-4">
-				<div class="grow">
-					<h2 class="text-2xl font-bold text-base-800">Conoce más</h2>
-					<div class="text-base-700 leading-tight">
-						Entérate de todo lo que es lo que estamos haciendo, como estamos impulsando la comunidad
-						de código abierto, y como puedes participar.
-					</div>
-				</div>
-				<div class="mt-8 flex flex-col sm:flex-row gap-2">
-					<a
-						href="https://www.instagram.com/opensource_euc/"
-						class="flex w-full items-center gap-2 justify-center rounded-sm bg-base-100 py-2 px-4 text-base-900 hover:underline lg:w-max"
-					>
-						<svg xmlns="http://www.w3.org/2000/svg" class="h-6" viewBox="0 0 24 24"
-							><path
-								fill="currentColor"
-								d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8A1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5a5 5 0 0 1-5 5a5 5 0 0 1-5-5a5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3Z"
-							/></svg
-						>
-						Síguenos en Instagram
-					</a>
-					<a
-						href="/about"
-						class="flex w-full items-center justify-center rounded-sm bg-base-100 py-2 px-4 text-base-900 hover:underline lg:w-max"
-						>Más sobre nosotros</a
-					>
-				</div>
-			</div>
-		</div>
-		<div class="flex flex-col overflow-clip bg-base-50 border border-base-300 rounded-md">
-			<img
-				src={colaborateImgSrc}
-				alt=""
-				class="h-36 w-full object-cover object-[50%_30%] brightness-125 rounded-b-md"
-			/>
-			<div class="flex grow flex-col p-4">
-				<h2 class="text-2xl font-bold text-base-800">Colabora con nosotros</h2>
-				<div class="text-base-700 leading-tight">
-					Desde empresas hasta otras iniciativas de otras universidades, buscamos colaborar para
-					impulsar la comunidad de código abierto.
-				</div>
-				<div class="mt-8 flex gap-2 flex-col sm:flex-row">
-					<a
-						href="/contact"
-						class="flex py-2 w-full items-center justify-center bg-base-100 px-4 text-base-900 hover:underline lg:w-max"
-						>Contáctanos</a
-					>
-				</div>
-			</div>
-		</div>
+		<!-- Únete -->
 		<div
 			class="grid h-min gap-4 overflow-clip bg-primary-600 lg:col-span-2 lg:grid-cols-2 rounded-md"
 		>
@@ -239,6 +184,61 @@
 						href="/join"
 						class="flex py-2 px-2 text-center min-h-fit rounded-sm items-center justify-center bg-primary-50 text-primary-700 hover:underline"
 						>Participa en nuestra comunidad</a
+					>
+				</div>
+			</div>
+		</div>
+
+		<!-- Conoce más -->
+		<div class="flex flex-col overflow-clip bg-base-50 border border-base-300 rounded-md">
+			<img src={moreImgSrc} alt="" class="h-36 w-full object-cover object-[50%_30%] rounded-b-md" />
+			<div class="flex grow flex-col p-4">
+				<div class="grow">
+					<h2 class="text-2xl font-bold text-base-800">Conoce más</h2>
+					<div class="text-base-700 leading-tight">
+						Entérate de todo lo que es lo que estamos haciendo, como estamos impulsando la comunidad
+						de código abierto, y como puedes participar.
+					</div>
+				</div>
+				<div class="mt-8 flex flex-col sm:flex-row gap-2">
+					<a
+						href="https://www.instagram.com/opensource_euc/"
+						class="flex w-full items-center gap-2 justify-center rounded-sm bg-base-100 py-2 px-4 text-base-900 hover:underline lg:w-max"
+					>
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-6" viewBox="0 0 24 24"
+							><path
+								fill="currentColor"
+								d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8A1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5a5 5 0 0 1-5 5a5 5 0 0 1-5-5a5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3Z"
+							/></svg
+						>
+						Síguenos en Instagram
+					</a>
+					<a
+						href="/about"
+						class="flex w-full items-center justify-center rounded-sm bg-base-100 py-2 px-4 text-base-900 hover:underline lg:w-max"
+						>Más sobre nosotros</a
+					>
+				</div>
+			</div>
+		</div>
+		<!-- Colabora -->
+		<div class="flex flex-col overflow-clip bg-base-50 border border-base-300 rounded-md">
+			<img
+				src={colaborateImgSrc}
+				alt=""
+				class="h-36 w-full object-cover object-[50%_30%] brightness-125 rounded-b-md"
+			/>
+			<div class="flex grow flex-col p-4">
+				<h2 class="text-2xl font-bold text-base-800">Colabora con nosotros</h2>
+				<div class="text-base-700 leading-tight">
+					Desde empresas hasta otras iniciativas de otras universidades, buscamos colaborar para
+					impulsar la comunidad de código abierto.
+				</div>
+				<div class="mt-8 flex gap-2 flex-col sm:flex-row">
+					<a
+						href="/contact"
+						class="flex py-2 w-full items-center justify-center bg-base-100 px-4 text-base-900 hover:underline lg:w-max"
+						>Contáctanos</a
 					>
 				</div>
 			</div>

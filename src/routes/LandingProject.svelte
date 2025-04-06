@@ -13,7 +13,7 @@
 </script>
 
 <li
-	class="bg-base-50 flex max-w-2xs lg:max-w-xs flex-col overflow-clip rounded-sm border border-base-800 shadow-sm"
+	class="bg-base-50 flex max-w-2xs md:max-w-full flex-col overflow-clip rounded-sm border border-base-800 shadow-sm"
 >
 	<img
 		src={repo.openGraphImageUrl}
