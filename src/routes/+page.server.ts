@@ -38,7 +38,7 @@ export async function load(event) {
 		// Usage limits: 5000 points per hour -> aprox 12 requests second
 		// https://docs.github.com/en/graphql/overview/resource-limitations#returning-a-calls-rate-limit-status
 		event.setHeaders({
-			'Cache-Control': 'public, max-age=15, stale-while-revalidate=3'
+			'Cache-Control': 'public, max-age=20, stale-while-revalidate=604800'
 		});
 
 		return {
