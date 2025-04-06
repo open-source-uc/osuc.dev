@@ -53,13 +53,13 @@
 		</p>
 
 		<h2>Timeline de Coordinadores</h2>
-		<div class="relative border-l-2 border-gray-300">
+		<div class="relative border-l-2 border-gray-300 not-prose">
 			{#each leadersHistory as { year, leaders }}
 				<div class="mb-6">
 					<h3 class="text-2xl font-semibold text-primary-500 mb-4 ml-2">{year}</h3>
-					<div class="ml-4">
+					<div class="ml-4 flex flex-col gap-1">
 						{#each leaders as leader}
-							<div class="flex items-center mb-6 space-x-6">
+							<div class="flex items-center space-x-6">
 								<div
 									class="shrink-0 w-16 h-16 rounded-full border-2 border-primary-500 flex items-center justify-center"
 								>
