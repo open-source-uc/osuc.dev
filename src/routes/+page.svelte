@@ -194,7 +194,7 @@
 			<img src={moreImgSrc} alt="" class="h-36 w-full object-cover object-[50%_30%] rounded-b-md" />
 			<div class="flex grow flex-col p-4">
 				<div class="grow">
-					<h2 class="text-2xl font-bold text-base-800">Conoce más</h2>
+					<h2 class="text-2xl font-bold text-base-800 mb-2">Conoce más</h2>
 					<div class="text-base-700 leading-tight">
 						Entérate de todo lo que es lo que estamos haciendo, como estamos impulsando la comunidad
 						de código abierto, y como puedes participar.
@@ -229,7 +229,7 @@
 				class="h-36 w-full object-cover object-[50%_30%] brightness-125 rounded-b-md"
 			/>
 			<div class="flex grow flex-col p-4">
-				<h2 class="text-2xl font-bold text-base-800">Colabora con nosotros</h2>
+				<h2 class="text-2xl font-bold text-base-800 mb-2">Colabora con nosotros</h2>
 				<div class="text-base-700 leading-tight">
 					Desde empresas hasta otras iniciativas de otras universidades, buscamos colaborar para
 					impulsar la comunidad de código abierto.
