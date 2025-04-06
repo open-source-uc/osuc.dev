@@ -79,7 +79,8 @@
 								</div>
 								<div class="flex flex-col p-2">
 									<p class="font-semibold">
-										<span class="text-primary-600" />{leader.name}<br />
+										<span class="text-primary-600"></span>
+											{leader.name}<br />
 										{leader.description}
 									</p>
 								</div>
