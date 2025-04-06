@@ -13,7 +13,7 @@
 </script>
 
 <li
-	class="bg-base-50 flex max-w-xs flex-col overflow-clip rounded-sm border border-base-800 shadow-sm"
+	class="bg-base-50 flex max-w-2xs lg:max-w-xs flex-col overflow-clip rounded-sm border border-base-800 shadow-sm"
 >
 	<img
 		src={repo.openGraphImageUrl}
@@ -22,9 +22,9 @@
 		width="1280"
 		height="640"
 	/>
-	<div class="flex grow flex-col px-4 pt-2 pb-3 gap-3">
+	<div class="flex grow flex-col px-4 pt-2 lg:pt-3 pb-3 gap-2">
 		<div class="grow">
-			<div class="flex justify-between items-center mt-1">
+			<div class="flex justify-between items-center">
 				<a href={repo.url} class="underline text-base-800 font-bold text-xl">
 					{repo.name}
 				</a>
@@ -44,19 +44,21 @@
 				{repo.description}
 			</div>
 		</div>
-		<ul class="flex gap-2">
-			{#each repo.topics as { name, url, stars }}
-				<li class="contents">
-					<a
-						class="bg-base-200 text-xs px-2 py-0.5 rounded-sm hover:underline"
-						data-stars={stars}
-						href={url}
-					>
-						{name}
-					</a>
-				</li>
-			{/each}
-		</ul>
+		{#if repo.topics.length > 0}
+			<ul class="flex gap-1">
+				{#each repo.topics as { name, url, stars }}
+					<li class="contents">
+						<a
+							class="bg-base-200 text-xs px-2 py-0.5 rounded-sm hover:underline"
+							data-stars={stars}
+							href={url}
+						>
+							{name}
+						</a>
+					</li>
+				{/each}
+			</ul>
+		{/if}
 	</div>
 	<div class="hidden sm:block text-xs border-t text-base-500 border-base-800 bg-base-100 px-4 py-2">
 		<a href={issueUrl()} class="underline inline">
