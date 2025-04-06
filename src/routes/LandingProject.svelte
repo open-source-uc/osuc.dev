@@ -12,7 +12,9 @@
 	}
 </script>
 
-<li class="bg-base-50 flex max-w-xs flex-col overflow-clip rounded border border-base-800 shadow">
+<li
+	class="bg-base-50 flex max-w-xs flex-col overflow-clip rounded-sm border border-base-800 shadow-sm"
+>
 	<img
 		src={repo.openGraphImageUrl}
 		class="object-cover object-center border-b text-base-800 border-base-800"
@@ -20,8 +22,8 @@
 		width="1280"
 		height="640"
 	/>
-	<div class="flex flex-grow flex-col px-4 pt-2 pb-3 gap-3">
-		<div class="flex-grow">
+	<div class="flex grow flex-col px-4 pt-2 pb-3 gap-3">
+		<div class="grow">
 			<div class="flex justify-between items-center mt-1">
 				<a href={repo.url} class="underline text-base-800 font-bold text-xl">
 					{repo.name}
@@ -46,7 +48,7 @@
 			{#each repo.topics as { name, url, stars }}
 				<li class="contents">
 					<a
-						class="bg-base-200 text-xs px-2 py-0.5 rounded hover:underline"
+						class="bg-base-200 text-xs px-2 py-0.5 rounded-sm hover:underline"
 						data-stars={stars}
 						href={url}
 					>

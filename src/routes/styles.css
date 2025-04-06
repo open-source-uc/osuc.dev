@@ -1,9 +1,87 @@
-@import '@fontsource-variable/league-spartan';
-@import '@fontsource-variable/manrope';
+@import '@fontsource-variable/league-spartan' layer(base);
+@import '@fontsource-variable/manrope' layer(base);
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
+@plugin '@tailwindcss/forms';
+@plugin '@tailwindcss/typography';
+
+@theme {
+	--font-sans:
+		Manrope Variable, Inter, ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji',
+		'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+
+	--font-display:
+		League Spartan Variable, ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji',
+		'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+
+	--color-primary-50: #f2f7ff;
+	--color-primary-100: #e1f1ff;
+	--color-primary-200: #bcdefe;
+	--color-primary-300: #91c3ff;
+	--color-primary-400: #609fff;
+	--color-primary-500: #0073de;
+	--color-primary-600: #0060c0;
+	--color-primary-700: #0448af;
+	--color-primary-800: #01358d;
+	--color-primary-900: #022975;
+	--color-primary-950: #021e56;
+
+	--color-base-50: #fbfbfd;
+	--color-base-100: #f2f3f7;
+	--color-base-200: #e1e4ec;
+	--color-base-300: #cacfdb;
+	--color-base-400: #8791a0;
+	--color-base-500: #566378;
+	--color-base-600: #445066;
+	--color-base-700: #2c374b;
+	--color-base-800: #1c2637;
+	--color-base-900: #141b27;
+	--color-base-950: #0f1520;
+}
+
+/**
+* Este uso de base y utilities para las clases container es un hack para
+* que funcione con fue definido originalmente en la página y que no se rompa
+* con la clase container que por el momento está mal documentada en Tailwind
+*/
+@layer base {
+	.container,
+	.container-sm {
+		width: 100%;
+		margin: 0 auto;
+		padding: calc(4 * var(--spacing));
+		@variant md {
+			padding: calc(8 * var(--spacing));
+		}
+	}
+}
+
+@layer utilities {
+	.container {
+		max-width: var(--breakpoint-lg);
+	}
+	.container-sm {
+		max-width: var(--breakpoint-sm);
+	}
+}
+
+/*
+  The default border color has changed to `currentcolor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+	*,
+	::after,
+	::before,
+	::backdrop,
+	::file-selector-button {
+		border-color: var(--color-gray-200, currentcolor);
+	}
+}
 
 html,
 body {
@@ -12,7 +90,7 @@ body {
 }
 
 body {
-	background-color: theme('colors.base.950');
+	background-color: var(--color-base-950);
 	display: flex;
 	flex-direction: column;
 }

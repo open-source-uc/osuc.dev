@@ -61,7 +61,7 @@
 						{#each leaders as leader}
 							<div class="flex items-center mb-6 space-x-6">
 								<div
-									class="flex-shrink-0 w-16 h-16 rounded-full border-2 border-primary-500 flex items-center justify-center"
+									class="shrink-0 w-16 h-16 rounded-full border-2 border-primary-500 flex items-center justify-center"
 								>
 									{#if leader?.avatarUrl}
 										<img
@@ -79,7 +79,8 @@
 								</div>
 								<div class="flex flex-col p-2">
 									<p class="font-semibold">
-										<span class="text-primary-600" />{leader.name}<br />
+										<span class="text-primary-600"></span>
+										{leader.name}<br />
 										{leader.description}
 									</p>
 								</div>
