@@ -1,5 +1,34 @@
 [
 	{
+		"year": "2025-2",
+		"leaders":[{
+			"name": "Vicente Muñoz",
+			"description": "General",
+			"githubUser": "utmite"
+		},
+		{
+			"name": "Ignacio Palma",
+			"description": "Vice Coordinador",
+			"githubUser": "IgnacioPalma"
+		},
+		{
+			"name": "Noemi Flores",
+			"description": "Comunidad e Inlusión",
+			"githubUser": "soap-y"
+		},
+		{
+			"name": "Vicente Cuitiño",
+			"description": "Externo",
+			"githubUser": "MangoFrapuccino"
+		}, 
+		{
+			"name": "Pablo Cruzat",
+			"description": "Proyectos",
+			"githubUser": "PabloCruzval"
+		}
+	]
+	},
+	{
 		"year": "2025-1",
 		"leaders": [
 			{
