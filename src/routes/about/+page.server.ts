@@ -4,11 +4,13 @@ export async function load({ setHeaders }) {
 	const leadersWithGithubData = leadersAndYear.map((yearGroup) => ({
 		...yearGroup,
 		leaders: yearGroup.leaders.map((leader) => {
-			const avatarUrl = leader.githubUser ? `https://github.com/${leader.githubUser}.png` : null;
+            const avatarUrl = leader.githubUser ? `https://github.com/${leader.githubUser}.png` : null;
+            const githubUrl = leader.githubUser ? `https://github.com/${leader.githubUser}` : null;
 			return {
 				...leader,
-				avatarUrl,
-				name: leader.githubUser ? leader.githubUser : leader.name // Si no hay githubUser, usar el nombre del líder
+                avatarUrl,
+                githubUrl,
+				name: leader.name ? leader.name : leader.githubUser// Si no hay githubUser, usar el nombre del líder
 			};
 		})
 	}));

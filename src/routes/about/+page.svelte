@@ -62,6 +62,10 @@
 										<span class="text-primary-600"></span>
 										{leader.name}<br />
 										{leader.description}
+                                        {#if leader?.avatarUrl}
+                                        <br />
+                                        <a href={leader.githubUrl} class="text-primary-600">GitHub</a>
+                                        {/if}
 									</p>
 								</div>
 							</div>
