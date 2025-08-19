@@ -3,28 +3,33 @@
 		"year": "2025-2",
 		"leaders":[{
 			"name": "Vicente Muñoz",
-			"description": "General",
+			"description": "Presidente",
 			"githubUser": "utmite"
 		},
 		{
 			"name": "Ignacio Palma",
-			"description": "Vice Coordinador",
+			"description": "Secretario General",
 			"githubUser": "IgnacioPalma"
 		},
 		{
 			"name": "Noemi Flores",
-			"description": "Comunidad e Inlusión",
+			"description": "Coordinadora de Comunidad e Inclusión",
 			"githubUser": "soap-y"
 		},
 		{
 			"name": "Vicente Cuitiño",
-			"description": "Externo",
+			"description": "Coordinador de Relaciones Exteriores",
 			"githubUser": "MangoFrapuccino"
 		}, 
 		{
 			"name": "Pablo Cruzat",
-			"description": "Proyectos",
+			"description": "Coordinador de Proyectos",
 			"githubUser": "PabloCruzval"
+		},
+        {
+				"name": "Nicolás Cruzat",
+				"description": "Coordinador de Diseño",
+				"githubUser": "nicru"
 		}
 	]
 	},
@@ -50,7 +55,7 @@
 				"name": "Vicente Cuitiño",
 				"description": "Externo",
 				"githubUser": "MangoFrapuccino"
-			}
+			}        
 		]
 	},
 	{
