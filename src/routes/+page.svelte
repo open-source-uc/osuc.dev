@@ -202,7 +202,7 @@
 				</div>
 				<div class="mt-8 flex flex-col sm:flex-row gap-2">
 					<a
-						href="https://www.instagram.com/opensource_euc/"
+						href="https://www.instagram.com/osuc.dev/"
 						class="flex w-full items-center gap-2 justify-center rounded-sm bg-base-100 py-2 px-4 text-base-900 hover:underline lg:w-max"
 					>
 						<svg xmlns="http://www.w3.org/2000/svg" class="h-6" viewBox="0 0 24 24"
