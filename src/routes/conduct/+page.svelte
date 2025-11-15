@@ -5,7 +5,7 @@
 			<p>
 				Si eres víctima o presenciaste un incidente dentro de nuestra comunidad, puedes denunciar y
 				conseguir apoyo contactando a nuestro Coordinador de Comunidad e Inclusión
-				(noemi.flores@uc.cl).
+				(noemi.flores@estudiante.uc.cl).
 			</p>
 		</div>
 
